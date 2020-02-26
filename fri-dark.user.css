@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name         fri-dark
 @namespace    github.com/openstyles/stylus
-@version      0.0.2
+@version      0.0.3
 @license      unlicense
 @preprocessor default
 ==/UserStyle== */
@@ -133,7 +133,7 @@ a
 	color: #F92672 !important;
 }
 
-.calendar_event_course
+.calendar_event_course {
 	border-collapse: separate;
 }
 
