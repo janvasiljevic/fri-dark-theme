@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name         fri-dark
-@namespace    github.com/openstyles/stylus
-@version      0.0.4
+@namespace    FRI 
+@version      0.0.5
 @license      unlicense
 @preprocessor default
 ==/UserStyle== */
@@ -1067,5 +1067,14 @@ span
 	.message-app .contact-status.online {
     border: 1px solid #fff;
     background-color: #66d9ef;
+}
+	
+.block .block-cards .course-summaryitem {
+    border: 1px solid #0003;
+    background-color: #2d2d2d96;
+}
+	
+	.block .block-cards .btn.btn-link.btn-icon:hover, .block .block-cards #page-grade-grading-manage .actions .action.btn-link.btn-icon:hover, #page-grade-grading-manage .actions .block .block-cards .action.btn-link.btn-icon:hover, .block .block-cards #rubric-rubric.gradingform_rubric #rubric-criteria .criterion .addlevel input.btn-link.btn-icon:hover, #rubric-rubric.gradingform_rubric #rubric-criteria .criterion .addlevel .block .block-cards input.btn-link.btn-icon:hover, .block .block-cards #rubric-rubric.gradingform_rubric .addcriterion.btn-link.btn-icon:hover, #rubric-rubric.gradingform_rubric .block .block-cards .addcriterion.btn-link.btn-icon:hover, .block .block-cards .btn.btn-link.btn-icon:focus, .block .block-cards #page-grade-grading-manage .actions .action.btn-link.btn-icon:focus, #page-grade-grading-manage .actions .block .block-cards .action.btn-link.btn-icon:focus, .block .block-cards #rubric-rubric.gradingform_rubric #rubric-criteria .criterion .addlevel input.btn-link.btn-icon:focus, #rubric-rubric.gradingform_rubric #rubric-criteria .criterion .addlevel .block .block-cards input.btn-link.btn-icon:focus, .block .block-cards #rubric-rubric.gradingform_rubric .addcriterion.btn-link.btn-icon:focus, #rubric-rubric.gradingform_rubric .block .block-cards .addcriterion.btn-link.btn-icon:focus {
+    background-color: #1c1c1c;
 }
 }
