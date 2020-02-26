@@ -1,0 +1,801 @@
+/* ==UserStyle==
+@name           Fri Dark
+@namespace      FRI
+@version        0.0.1
+@description    FRI Ucilnica dark theme
+@author         Jan Vasiljevic
+==/UserStyle== */
+
+
+@-moz-document domain("ucilnica.fri.uni-lj.si") {
+.dropdown-item.active,
+.dropdown-item:active
+{
+	color: #fff !important;
+}
+
+#yui_3_17_2_1_1582669233698_110
+{
+	background-color: #fff0 !important;
+	box-shadow: 0px 0px 0px;
+}
+
+#searchform_button
+{
+	margin: 10px;
+}
+
+/* Background area pri levi strani */
+[data-region="drawer"]
+{
+	background-color: #2b2b2b66 !important;
+}
+
+
+
+/* Navbar */
+.bg-white
+{
+	background-color: #202020!important;
+}
+
+.navbar-light .navbar-brand
+{
+	color: rgba(255, 255, 255, .82) !important;
+}
+
+.fixed-top
+{
+	box-shadow: 2px 2px 10px #000000bd;
+}
+
+/* Menu itemi na levi in boxi na main pagu */
+.list-group-item
+{
+	background-color: #2d2d2d !important;
+}
+
+.list-group-item-action
+{
+	color: #fff !important;
+}
+
+.card,
+#page-enrol-users #filterform,
+.que .history,
+.userprofile .profile_tree section,
+.groupinfobox,
+.well
+{
+	background-color: #2d2d2d !important;
+}
+
+.btn-secondary,
+.btn-default
+{
+	color: #fff;
+	background-color: #373a3c;
+	border-color: #373a3c;
+}
+
+.page-link
+{
+	background-color: hsla(0, 0%, 0%, .6) !important;
+	border: 1px solid #585858;
+}
+
+
+
+.bg-gray
+{
+	background-color: #202020!important;
+}
+
+
+.btn-light
+{
+	color: #fff !important;
+	background-color: #000 !important;
+	border-color: #f8f9fa !important;
+}
+
+.btn-ligh:hover
+{
+	background-color: #000 !important;
+}
+
+.form-control
+{
+	background-color: #32393d !important;
+	border: 1px solid #4d4d4d;
+	color: #ffffffd9 !important;
+}
+
+.navbar-light .navbar-nav .nav-link
+{
+	color: rgba(255, 255, 255, 0.5);
+}
+
+.bg-light
+{
+	background-color: #2c2c2c !important;
+}
+
+.resourcelinkdetails
+{
+	color: #ffffffab !important;
+}
+
+/* Vsi link na strani - accent colour*/
+a
+{
+	color: #F92672 !important;
+}
+
+.calendar_event_course
+{
+	background-color: #a6e22e00 !important;
+	border-radius: 3px !important;
+	border: 1px solid #fd971f !important;
+	border-collapse: separate;
+}
+
+.popover-region-container
+{
+	background-color: #2d2d2d !important;
+}
+
+.preferences-container .preference-table tr th:nth-child(even)
+{
+	background-color: #464646 !important;
+}
+
+.preferences-container .preference-table tr td:nth-child(even)
+{
+	background-color: #464646 !important;
+}
+
+.fa-question-circle:before
+{
+	color: #A6E22E !important;
+}
+
+a:hover
+{
+	color: #FD971F !important;
+}
+
+.form-control:focus
+{
+	border-color: #FD971F !important;
+
+	-webkit-box-shadow: 0 0 0 0.2rem #fd971f40 !important;
+	box-shadow: 0 0 0 0.2rem #fd971f40 !important;
+}
+
+.list-group-item.active
+{
+
+	box-sizing: border-box;
+	border: 0px solid #FD971F !important;
+	background-color: #FD971F !important;
+	transition: 0.3s;
+}
+
+.list-group-item.active:hover
+{
+	color: #fff !important;
+	background-color: #fd971f52 !important;
+}
+
+
+#region-main
+{
+	background-color: #242424a6 !important;
+}
+
+div#region-main.has-blocks.mb-3
+{
+	background-color: #24242400 !important;
+}
+
+/* Ni na voljo ikonce*/
+.badge-info
+{
+	background-color: #a6e22ec2 !important;
+}
+
+.badge-info:hover
+{
+	background-color: #a6e22e !important;
+}
+
+
+/* Mihn trakc na levi tedna ko si na predmetu */
+.course-content .current::before
+{
+
+	border-left: #FD971F 2px solid !important;
+}
+
+.dashboard-card-deck.fixed-width-cards .dashboard-card
+{
+	border: 1px solid #65636380 !important;
+}
+
+dashboard-card-deck.fixed-width-cards:focus .dashboard-card:focus
+{
+	border-color: #FD971F !important;
+}
+
+/* Bassicly une slightly muted barve ka pise tedne */
+.text-muted,
+a.dimmed,
+a.dimmed:link,
+a.dimmed:visited,
+a.dimmed_text,
+a.dimmed_text:link,
+a.dimmed_text:visited,
+.dimmed_text,
+.dimmed_text a,
+.dimmed_text a:link,
+.dimmed_text a:visited,
+.usersuspended,
+.usersuspended a,
+.usersuspended a:link,
+.usersuspended a:visited,
+.dimmed_category,
+.dimmed_category a,
+.tag_feed .media .muted a,
+#page-admin-qtypes .disabled,
+#page-admin-qbehaviours .disabled,
+#page-admin-plugins #plugins-control-panel .pluginname .componentname,
+#page-admin-plugins #plugins-control-panel .version .versionnumber,
+#page-admin-plugins #plugins-control-panel .notes .requiredby,
+#plugins-check-page .page-description,
+#plugins-check-page #plugins-check .requires-ok,
+#plugins-check-page #plugins-check .displayname .plugindir,
+#plugins-check-page #plugins-check-available-dependencies .displayname .component,
+#page-admin-search .adminpagepath li,
+.block .minicalendar td.weekend,
+.section .activity .stealth,
+.course-content .section-summary .section-summary-activities .activity-count,
+.course-content ul li.section.hidden .sectionname > span,
+.course-content ul li.section.hidden .content > div.summary,
+.course-content ul li.section.hidden .activity .activityinstance,
+#course-category-listings .listitem[data-visible="0"],
+#course-category-listings .listitem[data-visible="0"] > div > a,
+#course-category-listings .listing-pagination-totals.dimmed,
+.fitem.disabled .fp-btn-choose,
+.form-defaultinfo,
+.form-label .form-shortname,
+.formsettingheading .form-horizontal,
+.no-felement.fstatic,
+.path-backup .backup_progress .backup_stage
+{
+	color: #ffffffa3!important;
+}
+
+.calendar_event_site
+{
+	background-color: #fff0;
+}
+
+.fa-eye:before
+{
+	color: #a6e22e !important;
+}
+
+.fa-eye-slash:before
+{
+	color: #a6e22e !important;
+}
+
+.calendar_event_category
+{
+	background-color: #d8bfd800;
+}
+
+.calendar_event_group
+{
+	background-color: #fee7ae00;
+}
+
+.calendar_event_user
+{
+	background-color: #dce7ec00;
+}
+
+
+img
+{
+	filter: grayscale(50%);
+}
+
+
+.btn-primary
+{
+	color: #fff !important;
+	background-color: #373737f5;
+	border-color: #03aa70;
+}
+
+
+/* Background area, uno kar ni na levi */
+body
+{
+	color: white;
+	background-image: var(--bg-img) !important;
+	--bg-custom: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAMAAAAMCGV4AAAAD1BMV…JiZGBhhhMMYIIRTjCgcIE8VC4TKpeRmYEZiTtIzGNihhNMAJJAATdKr5xFAAAAAElFTkSuQmCC);
+	--bg-img: url('https://camo.githubusercontent.com/5b8e4cd1a5ce69b6affa17ebd8e4aee00c147618/68747470733a2f2f7374796c6973687468656d65732e6769746875622e696f2f4769744875622d4461726b2f696d616765732f6261636b67726f756e64732f62672d63726f737368617463682e706e67');
+}
+
+.bg-dark
+{
+	background-color: #2b2b2b66 !important;
+}
+
+.card,
+#page-enrol-users #filterform,
+.que .history,
+.userprofile .profile_tree section,
+.groupinfobox,
+.well
+{
+	border: 0px solid rgba(0, 0, 0, .125) !important;
+}
+
+.popover-region-footer-container
+{
+	background-color: #2d2d2d
+}
+
+.dropdown-menu
+{
+	background-color: #202020;
+}
+
+
+
+.border-bottom
+{
+	border-bottom: 1px solid #4c4c4c!important;
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus
+{
+	background-color: #0000005c !important;
+}
+
+.moodle-dialogue-base .moodle-dialogue-lightbox
+{
+	background-color: #000000 !important;
+}
+.modal-content,
+.moodle-dialogue-base .moodle-dialogue-wrap.moodle-dialogue-content
+{
+	background-color: #181919 !important;
+}
+
+.message-app .btn.btn-link.btn-icon:hover,
+.message-app #page-grade-grading-manage .actions .action.btn-link.btn-icon:hover,
+#page-grade-grading-manage .actions .message-app .action.btn-link.btn-icon:hover,
+.message-app #rubric-rubric.gradingform_rubric #rubric-criteria .criterion .addlevel input.btn-link.btn-icon:hover,
+#rubric-rubric.gradingform_rubric #rubric-criteria .criterion .addlevel .message-app input.btn-link.btn-icon:hover,
+.message-app #rubric-rubric.gradingform_rubric .addcriterion.btn-link.btn-icon:hover,
+#rubric-rubric.gradingform_rubric .message-app .addcriterion.btn-link.btn-icon:hover,
+.message-app .btn.btn-link.btn-icon:focus,
+.message-app #page-grade-grading-manage .actions .action.btn-link.btn-icon:focus,
+#page-grade-grading-manage .actions .message-app .action.btn-link.btn-icon:focus,
+.message-app #rubric-rubric.gradingform_rubric #rubric-criteria .criterion .addlevel input.btn-link.btn-icon:focus,
+#rubric-rubric.gradingform_rubric #rubric-criteria .criterion .addlevel .message-app input.btn-link.btn-icon:focus,
+.message-app #rubric-rubric.gradingform_rubric .addcriterion.btn-link.btn-icon:focus,
+#rubric-rubric.gradingform_rubric .message-app .addcriterion.btn-link.btn-icon:focus
+{
+	background-color: #000000c7 !important;
+}
+
+.fa-star:before
+{
+	color: #a6e22e !important;
+}
+.input-group-text
+{
+	border: 1px solid #4d4d4d;
+}
+
+
+.bg-pulse-grey
+{
+	background-color: #000;
+}
+
+
+@keyframes bg-pulse-grey
+{
+	0%
+	{
+		background-color: #383939;
+	}
+	50%
+	{
+		background-color: #424242c9;
+	}
+
+	100%
+	{
+		background-color: #24242496;
+	}
+}
+
+.overlay-icon-container
+{
+	background-color: rgba(66, 66, 66, 0.6);
+}
+
+.fa-circle-o-notch
+{
+	color: rgb(0, 0, 0);
+}
+
+.btn-outline-secondary
+{
+	border-color: #565656;
+}
+
+
+/* Specificno za RK! */
+/* Domace n, kvizi, vaje, izpiti*/
+[style="padding: 5px; font-weight: bold; background-color: rgb(151, 206, 104);"]
+{
+	background-color: rgba(255, 255, 255, 0) !important;
+	border: 1px solid #a6e22e !important;
+	border-radius: 4px;
+}
+
+[style="padding: 5px; font-weight: bold; background-color: rgb(151, 206, 104);"] > span
+{
+	color: #a6e22e !important;
+	padding-left: 10px;
+}
+
+/* Predavanja*/
+#yui_3_17_2_1_1582663948486_110
+{
+	background-color: rgba(255, 255, 255, 0) !important;
+	border: 1px solid #66D9EF !important;
+	border-radius: 4px;
+}
+
+/* Predavanja text*/
+#yui_3_17_2_1_1582663948486_110 > span
+{
+	color: #66D9EF !important;
+	padding-left: 10px;
+}
+
+/* Rac k text border*/
+[style="padding: 5px; font-weight: bold; background-color: rgb(51, 102, 255);"]
+{
+	background-color: rgba(255, 255, 255, 0) !important;
+	border: 1px solid #FD971F !important;
+	border-radius: 4px;
+}
+
+[style="padding: 5px; font-weight: bold; background-color: rgb(51, 102, 255);"] > span
+{
+	color: #FD971F !important;
+	padding-left: 10px;
+}
+
+.forumpost.unread .row.header,
+.path-course-view .unread,
+span.unread
+{
+	background-color: #1a1a1a9e !important;
+}
+
+
+.btn-primary:hover
+{
+	color: #fff !important;
+	background-color: #fd971f !important;
+	border-color: #fd971f !important;
+}
+
+.btn-primary
+{
+	color: #fff !important;
+	background-color: #201f1ff5;
+	border-color: #fd971f;
+}
+
+.page-item.active .page-link
+{
+	border-color: #fd971f;
+}
+
+.userlist table#participants td
+{
+	padding: 10px;
+}
+
+
+/* Scrollbar behaviour */
+::-webkit-scrollbar
+{
+	width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track
+{
+	background: #464646;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb
+{
+	background: #403e3e;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover
+{
+	background: #9f9f9f;
+}
+
+.popover
+{
+	background-color: #161616;
+
+	border-radius: 4px;
+	box-shadow: 0px 0px 5px black;
+}
+.popover-body
+{
+	color: #ffffff;
+}
+
+.popover-header
+{
+	background-color: #1f1f1f;
+	border-radius: 4px 4px 0px 0px;
+}
+
+.alert-danger,
+#page-admin-index .adminerror
+{
+	color: #a6e22e;
+	background-color: #562f2d00;
+	border: 1px solid #a6e22e !important;
+}
+
+#yui_3_17_2_1_1582666237952_20 > button
+{
+	color: #a6e22e;
+}
+
+.alert-info
+{
+	color: #a6e22e;
+	background-color: #562f2d00;
+	border: 1px solid #a6e22e !important;
+}
+
+
+.switch input:checked + label::before
+{
+	background-color: #FD971F;
+}
+
+.custom-radio .custom-control-input:checked ~ .custom-control-label::before
+{
+	background-color: #FD971F;
+}
+
+.page-item disabled
+{
+	border: 0px solid !important;
+}
+
+.page-item.disabled .page-link
+{
+	border-color: #1a1a1a;
+}
+
+:focus
+{
+	outline: #a6e22e00 !important;
+}
+
+.page-link:focus
+{
+	box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0);
+}
+
+.btn-light
+{
+	border-radius: 2px;
+	color: #ffffff94 !important;
+	background-color: #202020 !important;
+	border-color: #f8f9fa00 !important;
+
+	transition: border-radius ease 0.5s;
+}
+
+.btn-light:hover
+{
+	border-radius: 20px;
+	color: #171717 !important;
+	background-color: #a4a4a47a !important;
+	border-color: #2a2a2b !important;
+}
+
+.btn-light:focus,
+.btn-light.focus
+{
+	-webkit-box-shadow: 0 0 0 0.2rem rgba(248, 249, 250, 0);
+	box-shadow: 0 0 0 0.2rem rgba(248, 249, 250, 0);
+}
+
+.dropdown-item.active,
+.dropdown-item:active
+{
+	color: #fff;
+	background-color: #FD971F;
+}
+
+.popover-region-container
+{
+
+	border: 1px solid #1a1919;
+}
+
+.card
+{
+	border-radius: 3px;
+	box-shadow: 0px 0px 2px #0000007a;
+}
+
+.btn-secondary
+{
+	border-radius: 3px;
+}
+
+
+.empty-placeholder-image-lg
+{
+	filter: brightness(0.5);
+}
+
+.forumpost
+{
+	border: 1px solid #dee2e69c;
+	border-radius: 5px;
+}
+
+.col-12.pt-3.pb-3 > .card
+{
+	background-color: #fff0 !important;
+	box-shadow: 0px 0px #fff0 !important;
+}
+
+a
+{
+	transition: 0.05s;
+}
+
+.table th,
+table.collection th,
+table.flexible th,
+.generaltable th,
+.table td,
+table.collection td,
+table.flexible td,
+.generaltable td
+{
+	border-top: 1px solid #aaa9;
+}
+
+.table thead th,
+table.collection thead th,
+table.flexible thead th,
+.generaltable thead th
+{
+	border-bottom: 2px solid #fbfbfb87;
+}
+
+.form-autocomplete-suggestions
+{
+	background-color: #3e3e3e;
+	border: 2px solid #595959;
+	margin: 15px;
+}
+
+.form-autocomplete-suggestions li
+{
+	color: #cacaca;
+}
+
+
+.form-autocomplete-suggestions li:hover
+{
+	background-color: #fd971f !important;
+	color: #fff;
+}
+
+.fp-iconview .fp-filename-field .fp-filename
+{
+	background: #00000096;
+	padding-top: 5px;
+	padding-bottom: 12px;
+	padding-left: 5px;
+	min-width: 112px;
+}
+
+.fp-iconview .fp-thumbnail
+{
+	border: 1px solid #000000e6;
+}
+
+#yui_3_17_2_1_1582732212391_331
+{
+	margin-bottom: 16px !important;
+}
+
+.alert.alert-info.alert-block > .close
+{
+	color: #a6e22e;
+}
+
+.maincalendar .calendarmonth td,
+.maincalendar .calendarmonth th
+{
+	border: 1px dotted #595959;
+}
+
+[data-region="filter"]
+{
+	padding-bottom: 6px;
+}
+
+[data-region="paging-control-container"]
+{
+	padding-top: 6px;
+}
+
+.btn-link
+{
+	color: #F92672 !important;
+}
+
+.custom-select
+{
+	border-radius: 3px;
+	margin: 15px;
+	background: #32393d !important;
+	border: 1px solid #ced4daab;
+	color: white;
+}
+
+
+.custom-select:focus
+{
+	border-color: #fd971f !important;
+}
+
+.course-content ul li.section.main
+{
+	border-bottom: 1px solid #dee2e6b5;
+	margin-top: 15;
+}
+
+.border,
+.filemanager-container,
+.filepicker-filelist
+{
+	border: 1px solid #dee2e699 !important;
+}
+}
