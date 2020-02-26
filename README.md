@@ -1,4 +1,4 @@
-# Fri dark theme
+![FRI dark header](images/header.png)
 A dark theme for the FRI moodle online classroom.
 
 ##  :gear: Installation
