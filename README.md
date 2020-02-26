@@ -7,7 +7,8 @@ Install [Stylus](https://add0n.com/stylus.html) for either [Firefox](https://add
 
 and then: 
 
-[Install the usercss](https://raw.githubusercontent.com/janvasiljevic/fri-dark-theme/master/fri-dark.user.css?token=ALM6ESQO722KA6AGX53RKMK6K2ZUI)
+[Install the usercss](https://raw.githubusercontent.com/janvasiljevic/fri-dark-theme/master/fri-dark.user.css)
+)
 
 
 ![Drake knows](images/drake-knows.png)
