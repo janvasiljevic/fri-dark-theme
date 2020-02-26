@@ -1,14 +1,13 @@
 /* ==UserStyle==
 @name         fri-dark
 @namespace    FRI 
-@version      0.0.5
+@version      0.0.6
 @license      unlicense
 @preprocessor default
 ==/UserStyle== */
 
 
 @-moz-document domain("ucilnica.fri.uni-lj.si") {
-
 .dropdown-item.active,
 .dropdown-item:active
 {
@@ -133,7 +132,8 @@ a
 	color: #F92672 !important;
 }
 
-.calendar_event_course {
+.calendar_event_course
+{
 	border-collapse: separate;
 	background-color: #fff0;
 	border-radius: 4px !important;
@@ -1039,42 +1039,133 @@ span
 }
 
 /**** FORUMI *****/
-
-.fa-star:before {
-    color: #66d9ef !important;
+.fa-star:before
+{
+	color: #66d9ef !important;
 }
 
-.region_main_settings_menu_proxy {
-    background-color: #fff0;
+.region_main_settings_menu_proxy
+{
+	background-color: #fff0;
 }
 
-.fa-question-circle:before {
-    color: #66d9ef !important;
+.fa-question-circle:before
+{
+	color: #66d9ef !important;
 }
 
-.fa-long-arrow-down:before {
-     color: #66d9ef !important;
+.fa-long-arrow-down:before
+{
+	color: #66d9ef !important;
 }
 
 /****** Neocenjena oddajja naloge ****/
+.path-mod-assign td.submissionnotgraded,
+.path-mod-assign div.submissionnotgraded
+{
+	color: #cececed1;
+	background-color: #464646;
+}
 
-.path-mod-assign td.submissionnotgraded, .path-mod-assign div.submissionnotgraded {
-    color: #cececed1;
-    background-color: #464646 ;
+
+.message-app .contact-status.online
+{
+	border: 1px solid #fff;
+	background-color: #66d9ef;
 }
-	
-	
-	.message-app .contact-status.online {
-    border: 1px solid #fff;
-    background-color: #66d9ef;
+
+.block .block-cards .course-summaryitem
+{
+	border: 1px solid #0003;
+	background-color: #2d2d2d96;
 }
-	
-.block .block-cards .course-summaryitem {
-    border: 1px solid #0003;
-    background-color: #2d2d2d96;
+
+.block .block-cards .btn.btn-link.btn-icon:hover,
+.block .block-cards #page-grade-grading-manage .actions .action.btn-link.btn-icon:hover,
+#page-grade-grading-manage .actions .block .block-cards .action.btn-link.btn-icon:hover,
+.block .block-cards #rubric-rubric.gradingform_rubric #rubric-criteria .criterion .addlevel input.btn-link.btn-icon:hover,
+#rubric-rubric.gradingform_rubric #rubric-criteria .criterion .addlevel .block .block-cards input.btn-link.btn-icon:hover,
+.block .block-cards #rubric-rubric.gradingform_rubric .addcriterion.btn-link.btn-icon:hover,
+#rubric-rubric.gradingform_rubric .block .block-cards .addcriterion.btn-link.btn-icon:hover,
+.block .block-cards .btn.btn-link.btn-icon:focus,
+.block .block-cards #page-grade-grading-manage .actions .action.btn-link.btn-icon:focus,
+#page-grade-grading-manage .actions .block .block-cards .action.btn-link.btn-icon:focus,
+.block .block-cards #rubric-rubric.gradingform_rubric #rubric-criteria .criterion .addlevel input.btn-link.btn-icon:focus,
+#rubric-rubric.gradingform_rubric #rubric-criteria .criterion .addlevel .block .block-cards input.btn-link.btn-icon:focus,
+.block .block-cards #rubric-rubric.gradingform_rubric .addcriterion.btn-link.btn-icon:focus,
+#rubric-rubric.gradingform_rubric .block .block-cards .addcriterion.btn-link.btn-icon:focus
+{
+	background-color: #1c1c1c;
 }
-	
-	.block .block-cards .btn.btn-link.btn-icon:hover, .block .block-cards #page-grade-grading-manage .actions .action.btn-link.btn-icon:hover, #page-grade-grading-manage .actions .block .block-cards .action.btn-link.btn-icon:hover, .block .block-cards #rubric-rubric.gradingform_rubric #rubric-criteria .criterion .addlevel input.btn-link.btn-icon:hover, #rubric-rubric.gradingform_rubric #rubric-criteria .criterion .addlevel .block .block-cards input.btn-link.btn-icon:hover, .block .block-cards #rubric-rubric.gradingform_rubric .addcriterion.btn-link.btn-icon:hover, #rubric-rubric.gradingform_rubric .block .block-cards .addcriterion.btn-link.btn-icon:hover, .block .block-cards .btn.btn-link.btn-icon:focus, .block .block-cards #page-grade-grading-manage .actions .action.btn-link.btn-icon:focus, #page-grade-grading-manage .actions .block .block-cards .action.btn-link.btn-icon:focus, .block .block-cards #rubric-rubric.gradingform_rubric #rubric-criteria .criterion .addlevel input.btn-link.btn-icon:focus, #rubric-rubric.gradingform_rubric #rubric-criteria .criterion .addlevel .block .block-cards input.btn-link.btn-icon:focus, .block .block-cards #rubric-rubric.gradingform_rubric .addcriterion.btn-link.btn-icon:focus, #rubric-rubric.gradingform_rubric .block .block-cards .addcriterion.btn-link.btn-icon:focus {
-    background-color: #1c1c1c;
+
+
+/*** IKONS */
+[src="https://ucilnica.fri.uni-lj.si/theme/image.php/boost/forum/1581676600/icon"]
+{
+	content: url(https://raw.githubusercontent.com/janvasiljevic/fri-dark-theme/master/icons/speech-bubble-1.png);
+}
+
+[src="https://ucilnica.fri.uni-lj.si/theme/image.php/boost/quiz/1581676600/icon"]
+{
+	content: url(https://raw.githubusercontent.com/janvasiljevic/fri-dark-theme/master/icons/bookmark.png);
+}
+
+
+
+[src="https://ucilnica.fri.uni-lj.si/theme/image.php/boost/core/1581676600/f/pdf-24"]
+{
+	content: url(https://raw.githubusercontent.com/janvasiljevic/fri-dark-theme/master/icons/save.png);
+}
+
+
+[src="https://ucilnica.fri.uni-lj.si/theme/image.php/boost/page/1581676600/icon"]
+{
+	content: url(https://raw.githubusercontent.com/janvasiljevic/fri-dark-theme/master/icons/book.png);
+}
+
+
+
+[src="https://ucilnica.fri.uni-lj.si/theme/image.php/boost/core/1581676600/f/archive-24"]
+{
+	content: url(https://raw.githubusercontent.com/janvasiljevic/fri-dark-theme/master/icons/pie-chart-2.png);
+}
+
+[src="https://ucilnica.fri.uni-lj.si/theme/image.php/boost/core/1581676600/f/archive-24"]
+{
+
+	content: url(https://raw.githubusercontent.com/janvasiljevic/fri-dark-theme/master/icons/pie-chart-2.png);
+	height: 24px !important;
+	width: 24px !important;
+}
+
+[src="https://ucilnica.fri.uni-lj.si/theme/image.php/boost/wiki/1581676600/icon"]
+{
+
+	content: url(https://raw.githubusercontent.com/janvasiljevic/fri-dark-theme/master/icons/list.png);
+	height: 24px !important;
+	width: 24px !important;
+}
+
+
+
+[src="https://ucilnica.fri.uni-lj.si/theme/image.php/boost/core/1581676600/f/document-24"]
+{
+	content: url(https://raw.githubusercontent.com/janvasiljevic/fri-dark-theme/master/icons/save.png);
+}
+
+
+
+
+[src="https://ucilnica.fri.uni-lj.si/theme/image.php/boost/url/1581676600/icon"]
+{
+	content: url(https://raw.githubusercontent.com/janvasiljevic/fri-dark-theme/master/icons/right-arrow.png);
+}
+
+
+
+
+[src="https://ucilnica.fri.uni-lj.si/theme/image.php/boost/choicegroup/1581676600/icon"]
+{
+	content: url(https://raw.githubusercontent.com/janvasiljevic/fri-dark-theme/master/icons/stick-man.png);
 }
 }
