@@ -1,5 +1,7 @@
-![FRI dark header](images/header.png)
-A dark theme for the FRI moodle online classroom.
+<p align="center">
+  <img src="https://raw.githubusercontent.com/janvasiljevic/fri-dark-theme/master/images/header.png" height="180"/>
+</p>
+A dark theme for the FRI moodle online classroom, based on the popular Monokai colour scheme.
 
 ##  :gear: Installation
 
