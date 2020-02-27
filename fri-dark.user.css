@@ -13,8 +13,6 @@
 	color: #fff !important;
 }
 
-
-
 #yui_3_17_2_1_1582669233698_110
 {
 	background-color: #fff0 !important;
@@ -499,7 +497,9 @@ span.unread
 }
 
 /* Firefox Scrollbar support, added by @DefaultSimon */
-#nav-drawer, html {
+#nav-drawer,
+html
+{
 	scrollbar-width: thin;
 	scrollbar-color: #403e3e #464646;
 }
@@ -934,7 +934,6 @@ table.flexible td,
 }
 
 /* ############################## Forums ##############################*/
-
 .fa-star:before
 {
 	color: #66d9ef !important;
@@ -994,22 +993,77 @@ table.flexible td,
 	background-color: #1c1c1c;
 }
 
-.fp-select .fp-thumbnail {
-    background: #0000;
-    border: 1px solid #dddddd45;
+.fp-select .fp-thumbnail
+{
+	background: #0000;
+	border: 1px solid #dddddd45;
 }
 
-.fp-select .fp-thumbnail img {
-    border: 1px solid #686868ab;
+.fp-select .fp-thumbnail img
+{
+	border: 1px solid #686868ab;
 }
 
-.path-calendar .maincalendar .calendarmonth ul li .badge.badge-circle.calendar_event_course {
-    background-color: #ffd3bd00;
+.path-calendar .maincalendar .calendarmonth ul li .badge.badge-circle.calendar_event_course
+{
+	background-color: #ffd3bd00;
 }
 
+.btn-secondary:not(:disabled):not(.disabled):active,
+.btn-default:not(:disabled):not(.disabled):active,
+.btn-secondary:not(:disabled):not(.disabled).active,
+.fp-viewbar:not(.disabled) a.checked:not(:disabled):not(.disabled),
+.btn-default:not(:disabled):not(.disabled).active,
+.show > .btn-secondary.dropdown-toggle,
+.show > .btn-default.dropdown-toggle
+{
+
+	background-color: #232323f7;
+	border-color: #aab4bfad;
+}
+
+.filemanager .yui3-datatable-even .yui3-datatable-cell
+{
+	background-color: #1f1f1f!important;
+}
+
+.filemanager .yui3-datatable-header
+{
+	background: #313131!important;
+	border-bottom: 1px solid #cccccc7a!important;
+	border-left: 0 solid #fff!important;
+	color: #fff!important;
+}
+
+.yui3-skin-sam .yui3-datatable-header
+{
+	text-shadow: 0 0px 0px #fff;
+}
+
+.dndupload-arrow
+{
+	background: url(https://raw.githubusercontent.com/janvasiljevic/fri-dark-theme/testing/icons/download.png) center no-repeat;
+	background-size: auto 60px;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link
+{
+	color: #fff;
+	background-color: #FD971F;
+}
+
+.fa-check:before
+{
+	color: #ffffff8f;
+}
+
+.popover-region-header-container
+{
+	border-bottom: 1px solid #dddddd8c;
+}
 
 /* Standard selectorji */
-
 a
 {
 	transition: 0.05s;
@@ -1025,14 +1079,11 @@ a:hover
 {
 	outline: #a6e22e00 !important;
 }
-
 }
 
 @-moz-document domain("ucilnica.fri.uni-lj.si") {
 /* Section za overridanje ikonc in slikc na strani. Sourci se znajo spremeneti glede na housting solutione. */
-
 /* ############################## Icons ##############################*/
-
 [src="https://ucilnica.fri.uni-lj.si/theme/image.php/boost/forum/1581676600/icon"]
 {
 	content: url(https://raw.githubusercontent.com/janvasiljevic/fri-dark-theme/master/icons/speech-bubble-1.png);
@@ -1090,6 +1141,51 @@ a:hover
 	content: url(https://raw.githubusercontent.com/janvasiljevic/fri-dark-theme/master/icons/stick-man.png);
 }
 
+
+/* Anketa */
+[src="https://ucilnica.fri.uni-lj.si/theme/image.php/boost/questionnaire/1581676600/icon"]
+{
+	content: url(https://raw.githubusercontent.com/janvasiljevic/fri-dark-theme/testing/icons/anketa.png);
+}
+
+
+
+/* Oddaja */
+[src="https://ucilnica.fri.uni-lj.si/theme/image.php/boost/assign/1581676600/icon"]
+{
+	content: url(https://raw.githubusercontent.com/janvasiljevic/fri-dark-theme/testing/icons/oddaja.png);
+}
+
+/* Excel */
+[src="https://ucilnica.fri.uni-lj.si/theme/image.php/boost/core/1581676600/f/spreadsheet-24"]
+{
+	content: url(https://raw.githubusercontent.com/janvasiljevic/fri-dark-theme/testing/icons/excel.png);
+}
+
+
+/* Slovar */
+[src="https://ucilnica.fri.uni-lj.si/theme/image.php/boost/glossary/1581676600/icon"]
+{
+	content: url(https://raw.githubusercontent.com/janvasiljevic/fri-dark-theme/testing/icons/letter.png);
+	height: 24px !important;
+	width: 24px !important;
+}
+
+
+/* Ena ikonca, ka je bila specificno uporabljena na Prog 1 za program izdelave matrik */
+[src="https://ucilnica.fri.uni-lj.si/theme/image.php/boost/core/1581676600/f/unknown-24"]
+{
+	content: url(https://raw.githubusercontent.com/janvasiljevic/fri-dark-theme/testing/icons/download-1.png);
+}
+
+/* Free logo - inverted colours */
+[src="https://ucilnica.fri.uni-lj.si/pluginfile.php/1/core_admin/logocompact/100x100/1581676600/ucilnica-logo-01.png"]
+{
+	content: url(https://raw.githubusercontent.com/janvasiljevic/fri-dark-theme/testing/icons/fri-logo-inverted.png);
+	opacity: 0.5;
+}
+
+
 /* Background image */
 body
 {
@@ -1098,13 +1194,11 @@ body
 	--bg-custom: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAMAAAAMCGV4AAAAD1BMV…JiZGBhhhMMYIIRTjCgcIE8VC4TKpeRmYEZiTtIzGNihhNMAJJAATdKr5xFAAAAAElFTkSuQmCC);
 	--bg-img: url('https://camo.githubusercontent.com/5b8e4cd1a5ce69b6affa17ebd8e4aee00c147618/68747470733a2f2f7374796c6973687468656d65732e6769746875622e696f2f4769744875622d4461726b2f696d616765732f6261636b67726f756e64732f62672d63726f737368617463682e706e67');
 }
-
 }
 
 @-moz-document domain("ucilnica.fri.uni-lj.si") {
 /* Styling za specificne predmete. Kdaj ima predmet dodane elemente, ki so stylani z inline css-jem, zato ti potrebujejo dodatano pozornost.
 /* Nimam dostopa do vseh predmetov, zato se zahvaljujem v naprej folku, ki bi custom stylav take predmete */
-
 /* ############################## Specificno RK ##############################*/
 [style="padding: 5px; font-weight: bold; background-color: rgb(51, 102, 255);"]
 {
