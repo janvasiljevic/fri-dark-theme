@@ -553,6 +553,12 @@ span.unread
 	background: #9f9f9f;
 }
 
+/* Firefox Scrollbar support */
+#nav-drawer, html {
+	scrollbar-width: thin;
+	scrollbar-color: #403e3e #464646;
+}
+
 .popover
 {
 	background-color: #161616;
