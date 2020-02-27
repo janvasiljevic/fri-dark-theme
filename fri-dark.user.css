@@ -6,13 +6,14 @@
 @preprocessor default
 ==/UserStyle== */
 
-
 @-moz-document domain("ucilnica.fri.uni-lj.si") {
 .dropdown-item.active,
 .dropdown-item:active
 {
 	color: #fff !important;
 }
+
+
 
 #yui_3_17_2_1_1582669233698_110
 {
@@ -30,8 +31,6 @@
 {
 	background-color: #2b2b2b66 !important;
 }
-
-
 
 /* Navbar */
 .bg-white
@@ -84,13 +83,10 @@
 	border: 1px solid #585858;
 }
 
-
-
 .bg-gray
 {
 	background-color: #202020!important;
 }
-
 
 .btn-light
 {
@@ -126,12 +122,6 @@
 	color: #ffffffab !important;
 }
 
-/* Vsi link na strani - accent colour*/
-a
-{
-	color: #F92672 !important;
-}
-
 .calendar_event_course
 {
 	border-collapse: separate;
@@ -158,11 +148,6 @@ a
 .fa-question-circle:before
 {
 	color: #66d9ef !important;
-}
-
-a:hover
-{
-	color: #FD971F !important;
 }
 
 .form-control:focus
@@ -199,7 +184,7 @@ div#region-main.has-blocks.mb-3
 	background-color: #24242400 !important;
 }
 
-/* Ni na voljo ikonce*/
+/* Not-available ikons */
 .badge-info
 {
 	background-color: #a6e22e00 !important;
@@ -216,7 +201,7 @@ div#region-main.has-blocks.mb-3
 }
 
 
-/* Mihn trakc na levi tedna ko si na predmetu */
+/* Mihn strip na levi, ko si na predmetu / per teden */
 .course-content .current::before
 {
 
@@ -233,7 +218,6 @@ dashboard-card-deck.fixed-width-cards:focus .dashboard-card:focus
 	border-color: #FD971F !important;
 }
 
-/* Bassicly une slightly muted barve ka pise tedne */
 .text-muted,
 a.dimmed,
 a.dimmed:link,
@@ -327,16 +311,6 @@ img
 	border-color: #66d9ef;
 }
 
-
-/* Background area, uno kar ni na levi */
-body
-{
-	color: white;
-	background-image: var(--bg-img) !important;
-	--bg-custom: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAMAAAAMCGV4AAAAD1BMV…JiZGBhhhMMYIIRTjCgcIE8VC4TKpeRmYEZiTtIzGNihhNMAJJAATdKr5xFAAAAAElFTkSuQmCC);
-	--bg-img: url('https://camo.githubusercontent.com/5b8e4cd1a5ce69b6affa17ebd8e4aee00c147618/68747470733a2f2f7374796c6973687468656d65732e6769746875622e696f2f4769744875622d4461726b2f696d616765732f6261636b67726f756e64732f62672d63726f737368617463682e706e67');
-}
-
 .bg-dark
 {
 	background-color: #2b2b2b66 !important;
@@ -361,8 +335,6 @@ body
 {
 	background-color: #202020;
 }
-
-
 
 .border-bottom
 {
@@ -452,22 +424,13 @@ body
 }
 
 
-/* Specificno za RK! */
-/* Domace n, kvizi, vaje, izpiti*/
-[style="padding: 5px; font-weight: bold; background-color: rgb(151, 206, 104);"]
-{
-	background-color: rgba(255, 255, 255, 0) !important;
-	border: 1px solid #66d9ef !important;
-	border-radius: 4px;
-}
-
 [style="padding: 5px; font-weight: bold; background-color: rgb(151, 206, 104);"] > span
 {
 	color: #66d9ef !important;
 	padding-left: 10px;
 }
 
-/* Predavanja*/
+/* Predavanja */
 #yui_3_17_2_1_1582663948486_110
 {
 	background-color: rgba(255, 255, 255, 0) !important;
@@ -475,24 +438,10 @@ body
 	border-radius: 4px;
 }
 
-/* Predavanja text*/
+/* Predavanja text */
 #yui_3_17_2_1_1582663948486_110 > span
 {
 	color: #66D9EF !important;
-	padding-left: 10px;
-}
-
-/* Rac k text border*/
-[style="padding: 5px; font-weight: bold; background-color: rgb(51, 102, 255);"]
-{
-	background-color: rgba(255, 255, 255, 0) !important;
-	border: 1px solid #FD971F !important;
-	border-radius: 4px;
-}
-
-[style="padding: 5px; font-weight: bold; background-color: rgb(51, 102, 255);"] > span
-{
-	color: #FD971F !important;
 	padding-left: 10px;
 }
 
@@ -528,32 +477,28 @@ span.unread
 	padding: 10px;
 }
 
-
-/* Scrollbar behaviour */
+/* ############################## Scrollbar behaviour ##############################*/
 ::-webkit-scrollbar
 {
 	width: 8px;
 }
 
-/* Track */
 ::-webkit-scrollbar-track
 {
 	background: #464646;
 }
 
-/* Handle */
 ::-webkit-scrollbar-thumb
 {
 	background: #403e3e;
 }
 
-/* Handle on hover */
 ::-webkit-scrollbar-thumb:hover
 {
 	background: #9f9f9f;
 }
 
-/* Firefox Scrollbar support */
+/* Firefox Scrollbar support, added by @DefaultSimon */
 #nav-drawer, html {
 	scrollbar-width: thin;
 	scrollbar-color: #403e3e #464646;
@@ -616,11 +561,6 @@ span.unread
 .page-item.disabled .page-link
 {
 	border-color: #1a1a1a;
-}
-
-:focus
-{
-	outline: #a6e22e00 !important;
 }
 
 .page-link:focus
@@ -693,11 +633,6 @@ span.unread
 {
 	background-color: #fff0 !important;
 	box-shadow: 0px 0px #fff0 !important;
-}
-
-a
-{
-	transition: 0.05s;
 }
 
 .table th,
@@ -842,7 +777,7 @@ table.flexible thead th,
 	border-bottom-color: #1e1e1e;
 }
 
-/* ############################# KVIZI ################################## */
+/* ############################## Quizes ##############################*/
 .alert-info,
 #page-admin-index .releasenoteslink,
 #adminsettings .form-overridden,
@@ -970,55 +905,9 @@ table.flexible td,
 	color: #66D9EF !important;
 }
 
-/******* Specificno fizika ******/
-[style="color: rgb(152, 202, 62);"]
-{
-	color: #66D9EF !important;
-}
-
-/***** Specificno ODV ******/
-[style="color: rgb(0, 0, 0); font-size: small;"]
-{
-	color: #ffffffd6 !important;
-	font-weight: bolder;
-}
-
-[style="color: rgb(0, 0, 0); font-size: medium;"]
-{
-	color: #ffffffd6 !important;
-}
-
-[style="color: #000000; font-size: medium;"]
-{
-	color: #ffffffd6 !important;
-}
-
-[style="color: #000000; font-size: small;"]
-{
-	color: #ffffffd6 !important;
-}
 
 
-
-ul[style="padding: 0px; margin: 0px 0px 10px 25px;"]
-{
-	color: #ffffffd6 !important;
-}
-
-
-[style="color: rgb(0, 0, 0); font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: 20px; orphans: auto; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; display: inline !important; float: none;"]
-{
-	color: white !important;
-}
-
-[style="padding-bottom: 1px; overflow: auto; line-height: 20px;"] > p,
-ul,
-span
-{
-	color: white !important;
-}
-
-/** ODV ODDAJA KVIZOV**/
+/* ############################## Homework/ Quiz submissions ##############################*/
 .path-mod-assign td.submissionstatussubmitted,
 .path-mod-assign div.submissionstatussubmitted,
 .path-mod-assign a:link.submissionstatussubmitted
@@ -1044,7 +933,8 @@ span
 	background-color: #66d9ef00;
 }
 
-/**** FORUMI *****/
+/* ############################## Forums ##############################*/
+
 .fa-star:before
 {
 	color: #66d9ef !important;
@@ -1065,7 +955,7 @@ span
 	color: #66d9ef !important;
 }
 
-/****** Neocenjena oddajja naloge ****/
+/* Unsubmitted homework  */
 .path-mod-assign td.submissionnotgraded,
 .path-mod-assign div.submissionnotgraded
 {
@@ -1104,8 +994,45 @@ span
 	background-color: #1c1c1c;
 }
 
+.fp-select .fp-thumbnail {
+    background: #0000;
+    border: 1px solid #dddddd45;
+}
 
-/*** IKONS */
+.fp-select .fp-thumbnail img {
+    border: 1px solid #686868ab;
+}
+
+.path-calendar .maincalendar .calendarmonth ul li .badge.badge-circle.calendar_event_course {
+    background-color: #ffd3bd00;
+}
+
+
+/* Standard selectorji */
+
+a
+{
+	transition: 0.05s;
+	color: #F92672 !important;
+}
+
+a:hover
+{
+	color: #FD971F !important;
+}
+
+:focus
+{
+	outline: #a6e22e00 !important;
+}
+
+}
+
+@-moz-document domain("ucilnica.fri.uni-lj.si") {
+/* Section za overridanje ikonc in slikc na strani. Sourci se znajo spremeneti glede na housting solutione. */
+
+/* ############################## Icons ##############################*/
+
 [src="https://ucilnica.fri.uni-lj.si/theme/image.php/boost/forum/1581676600/icon"]
 {
 	content: url(https://raw.githubusercontent.com/janvasiljevic/fri-dark-theme/master/icons/speech-bubble-1.png);
@@ -1117,19 +1044,15 @@ span
 }
 
 
-
 [src="https://ucilnica.fri.uni-lj.si/theme/image.php/boost/core/1581676600/f/pdf-24"]
 {
 	content: url(https://raw.githubusercontent.com/janvasiljevic/fri-dark-theme/master/icons/save.png);
 }
 
-
 [src="https://ucilnica.fri.uni-lj.si/theme/image.php/boost/page/1581676600/icon"]
 {
 	content: url(https://raw.githubusercontent.com/janvasiljevic/fri-dark-theme/master/icons/book.png);
 }
-
-
 
 [src="https://ucilnica.fri.uni-lj.si/theme/image.php/boost/core/1581676600/f/archive-24"]
 {
@@ -1152,26 +1075,114 @@ span
 	width: 24px !important;
 }
 
-
-
 [src="https://ucilnica.fri.uni-lj.si/theme/image.php/boost/core/1581676600/f/document-24"]
 {
 	content: url(https://raw.githubusercontent.com/janvasiljevic/fri-dark-theme/master/icons/save.png);
 }
-
-
-
 
 [src="https://ucilnica.fri.uni-lj.si/theme/image.php/boost/url/1581676600/icon"]
 {
 	content: url(https://raw.githubusercontent.com/janvasiljevic/fri-dark-theme/master/icons/right-arrow.png);
 }
 
-
-
-
 [src="https://ucilnica.fri.uni-lj.si/theme/image.php/boost/choicegroup/1581676600/icon"]
 {
 	content: url(https://raw.githubusercontent.com/janvasiljevic/fri-dark-theme/master/icons/stick-man.png);
+}
+
+/* Background image */
+body
+{
+	color: white;
+	background-image: var(--bg-img) !important;
+	--bg-custom: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAMAAAAMCGV4AAAAD1BMV…JiZGBhhhMMYIIRTjCgcIE8VC4TKpeRmYEZiTtIzGNihhNMAJJAATdKr5xFAAAAAElFTkSuQmCC);
+	--bg-img: url('https://camo.githubusercontent.com/5b8e4cd1a5ce69b6affa17ebd8e4aee00c147618/68747470733a2f2f7374796c6973687468656d65732e6769746875622e696f2f4769744875622d4461726b2f696d616765732f6261636b67726f756e64732f62672d63726f737368617463682e706e67');
+}
+
+}
+
+@-moz-document domain("ucilnica.fri.uni-lj.si") {
+/* Styling za specificne predmete. Kdaj ima predmet dodane elemente, ki so stylani z inline css-jem, zato ti potrebujejo dodatano pozornost.
+/* Nimam dostopa do vseh predmetov, zato se zahvaljujem v naprej folku, ki bi custom stylav take predmete */
+
+/* ############################## Specificno RK ##############################*/
+[style="padding: 5px; font-weight: bold; background-color: rgb(51, 102, 255);"]
+{
+	background-color: rgba(255, 255, 255, 0) !important;
+	border: 1px solid #FD971F !important;
+	border-radius: 4px;
+}
+
+/* Domace n, kvizi, vaje, izpiti*/
+[style="padding: 5px; font-weight: bold; background-color: rgb(151, 206, 104);"]
+{
+	background-color: rgba(255, 255, 255, 0) !important;
+	border: 1px solid #66d9ef !important;
+	border-radius: 4px;
+}
+
+
+[style="padding: 5px; font-weight: bold; background-color: rgb(51, 102, 255);"] > span
+{
+	color: #FD971F !important;
+	padding-left: 10px;
+}
+
+/* ############################## Specificly physics ##############################*/
+[style="color: rgb(152, 202, 62);"]
+{
+	color: #66D9EF !important;
+}
+
+/* ############################## Specificly ODV ##############################*/
+[style="color: rgb(0, 0, 0); font-size: small;"]
+{
+	color: #ffffffd6 !important;
+	font-weight: bolder;
+}
+
+[style="color: rgb(0, 0, 0); font-size: medium;"]
+{
+	color: #ffffffd6 !important;
+}
+
+[style="color: #000000; font-size: medium;"]
+{
+	color: #ffffffd6 !important;
+}
+
+[style="color: #000000; font-size: small;"]
+{
+	color: #ffffffd6 !important;
+}
+
+ul[style="padding: 0px; margin: 0px 0px 10px 25px;"]
+{
+	color: #ffffffd6 !important;
+}
+
+
+[style="color: rgb(0, 0, 0); font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: 20px; orphans: auto; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; display: inline !important; float: none;"]
+{
+	color: white !important;
+}
+
+
+[style="padding-bottom: 1px; overflow: auto; line-height: 20px;"] > p,
+ul,
+span
+{
+	color: white !important;
+}
+
+a > .instancename
+{
+	padding-left: 4px;
+	color: #F92672 !important;
+}
+
+a > .instancename:hover
+{
+	color: #fff !important;
 }
 }
