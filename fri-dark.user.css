@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name         fri-dark
 @namespace    FRI 
-@version      0.0.6
+@version      0.0.7
 @license      unlicense
 @preprocessor default
 ==/UserStyle== */
@@ -151,14 +151,12 @@
 .form-control:focus
 {
 	border-color: #FD971F !important;
-
 	-webkit-box-shadow: 0 0 0 0.2rem #fd971f40 !important;
 	box-shadow: 0 0 0 0.2rem #fd971f40 !important;
 }
 
 .list-group-item.active
 {
-
 	box-sizing: border-box;
 	border: 0px solid #FD971F !important;
 	background-color: #FD971F !important;
@@ -170,7 +168,6 @@
 	color: #fff !important;
 	background-color: #fd971f52 !important;
 }
-
 
 #region-main
 {
@@ -198,11 +195,9 @@ div#region-main.has-blocks.mb-3
 	border: 1px solid #66d9ef !important;
 }
 
-
 /* Mihn strip na levi, ko si na predmetu / per teden */
 .course-content .current::before
 {
-
 	border-left: #FD971F 2px solid !important;
 }
 
@@ -295,12 +290,10 @@ a.dimmed_text:visited,
 	background-color: #dce7ec00;
 }
 
-
 img
 {
 	filter: grayscale(50%);
 }
-
 
 .btn-primary
 {
@@ -349,6 +342,7 @@ img
 {
 	background-color: #000000 !important;
 }
+
 .modal-content,
 .moodle-dialogue-base .moodle-dialogue-wrap.moodle-dialogue-content
 {
@@ -377,17 +371,16 @@ img
 {
 	color: #a6e22e !important;
 }
+
 .input-group-text
 {
 	border: 1px solid #4d4d4d;
 }
 
-
 .bg-pulse-grey
 {
 	background-color: #000;
 }
-
 
 @keyframes bg-pulse-grey
 {
@@ -395,6 +388,7 @@ img
 	{
 		background-color: #383939;
 	}
+
 	50%
 	{
 		background-color: #424242c9;
@@ -420,7 +414,6 @@ img
 {
 	border-color: #565656;
 }
-
 
 [style="padding: 5px; font-weight: bold; background-color: rgb(151, 206, 104);"] > span
 {
@@ -449,7 +442,6 @@ span.unread
 {
 	background-color: #1a1a1a9e !important;
 }
-
 
 .btn-primary:hover
 {
@@ -507,10 +499,10 @@ html
 .popover
 {
 	background-color: #161616;
-
 	border-radius: 4px;
 	box-shadow: 0px 0px 5px black;
 }
+
 .popover-body
 {
 	color: #ffffff;
@@ -541,7 +533,6 @@ html
 	background-color: #562f2d00;
 	border: 1px solid #66d9ef !important;
 }
-
 
 .switch input:checked + label::before
 {
@@ -574,7 +565,6 @@ html
 	color: #ffffff94 !important;
 	background-color: #202020 !important;
 	border-color: #f8f9fa00 !important;
-
 	transition: border-radius ease 0.5s;
 }
 
@@ -602,7 +592,6 @@ html
 
 .popover-region-container
 {
-
 	border: 1px solid #1a1919;
 }
 
@@ -616,7 +605,6 @@ html
 {
 	border-radius: 3px;
 }
-
 
 .empty-placeholder-image-lg
 {
@@ -666,7 +654,6 @@ table.flexible thead th,
 {
 	color: #cacaca;
 }
-
 
 .form-autocomplete-suggestions li:hover
 {
@@ -727,7 +714,6 @@ table.flexible thead th,
 	border: 1px solid #ced4daab;
 	color: white;
 }
-
 
 .custom-select:focus
 {
@@ -810,7 +796,6 @@ table.flexible thead th,
 {
 	background-color: #1e1e1e8f !important;
 }
-
 
 .path-mod-quiz #mod_quiz_navblock .qnbutton.complete .trafficlight,
 .path-mod-quiz #mod_quiz_navblock .qnbutton.answersaved .trafficlight,
@@ -905,8 +890,6 @@ table.flexible td,
 	color: #66D9EF !important;
 }
 
-
-
 /* ############################## Homework/ Quiz submissions ##############################*/
 .path-mod-assign td.submissionstatussubmitted,
 .path-mod-assign div.submissionstatussubmitted,
@@ -962,7 +945,6 @@ table.flexible td,
 	background-color: #464646;
 }
 
-
 .message-app .contact-status.online
 {
 	border: 1px solid #fff;
@@ -1017,7 +999,6 @@ table.flexible td,
 .show > .btn-secondary.dropdown-toggle,
 .show > .btn-default.dropdown-toggle
 {
-
 	background-color: #232323f7;
 	border-color: #aab4bfad;
 }
@@ -1072,7 +1053,8 @@ a
 
 a:hover
 {
-	color: #FD971F !important;
+	color: #fff !important;
+	text-decoration: none;
 }
 
 :focus
@@ -1084,46 +1066,28 @@ a:hover
 @-moz-document domain("ucilnica.fri.uni-lj.si") {
 /* Section za overridanje ikonc in slikc na strani. Sourci se znajo spremeneti glede na housting solutione. */
 /* ############################## Icons ##############################*/
+/* Forumi */
 [src="https://ucilnica.fri.uni-lj.si/theme/image.php/boost/forum/1581676600/icon"]
 {
-	content: url(https://raw.githubusercontent.com/janvasiljevic/fri-dark-theme/master/icons/speech-bubble-1.png);
+	content: url(https://raw.githubusercontent.com/janvasiljevic/fri-dark-theme/testing/icons%2064%20px/speech-bubble-1%20-%2064px.png);
 }
 
+/* Kvizi / domace naloge z multiple choici */
 [src="https://ucilnica.fri.uni-lj.si/theme/image.php/boost/quiz/1581676600/icon"]
 {
-	content: url(https://raw.githubusercontent.com/janvasiljevic/fri-dark-theme/master/icons/bookmark.png);
+	content: url(https://raw.githubusercontent.com/janvasiljevic/fri-dark-theme/testing/icons%2064%20px/bookmark%20-%2064px.png);
 }
 
-
+/* PDF - ji */
 [src="https://ucilnica.fri.uni-lj.si/theme/image.php/boost/core/1581676600/f/pdf-24"]
 {
-	content: url(https://raw.githubusercontent.com/janvasiljevic/fri-dark-theme/master/icons/save.png);
+	content: url(https://raw.githubusercontent.com/janvasiljevic/fri-dark-theme/testing/icons%2064%20px/save%20-%2064px.png);
 }
 
+/* Internal linki - ala obvetnosti studenta, osnovni podatki o predmetu... */
 [src="https://ucilnica.fri.uni-lj.si/theme/image.php/boost/page/1581676600/icon"]
 {
-	content: url(https://raw.githubusercontent.com/janvasiljevic/fri-dark-theme/master/icons/book.png);
-}
-
-[src="https://ucilnica.fri.uni-lj.si/theme/image.php/boost/core/1581676600/f/archive-24"]
-{
-	content: url(https://raw.githubusercontent.com/janvasiljevic/fri-dark-theme/master/icons/pie-chart-2.png);
-}
-
-[src="https://ucilnica.fri.uni-lj.si/theme/image.php/boost/core/1581676600/f/archive-24"]
-{
-
-	content: url(https://raw.githubusercontent.com/janvasiljevic/fri-dark-theme/master/icons/pie-chart-2.png);
-	height: 24px !important;
-	width: 24px !important;
-}
-
-[src="https://ucilnica.fri.uni-lj.si/theme/image.php/boost/wiki/1581676600/icon"]
-{
-
-	content: url(https://raw.githubusercontent.com/janvasiljevic/fri-dark-theme/master/icons/list.png);
-	height: 24px !important;
-	width: 24px !important;
+	content: url(https://raw.githubusercontent.com/janvasiljevic/fri-dark-theme/testing/icons%2064%20px/book%20-%2064px.png);
 }
 
 [src="https://ucilnica.fri.uni-lj.si/theme/image.php/boost/core/1581676600/f/document-24"]
@@ -1133,59 +1097,64 @@ a:hover
 
 [src="https://ucilnica.fri.uni-lj.si/theme/image.php/boost/url/1581676600/icon"]
 {
-	content: url(https://raw.githubusercontent.com/janvasiljevic/fri-dark-theme/master/icons/right-arrow.png);
+	content: url(https://raw.githubusercontent.com/janvasiljevic/fri-dark-theme/testing/icons%2064%20px/right-arrow%20-%2064px.png);
 }
 
 [src="https://ucilnica.fri.uni-lj.si/theme/image.php/boost/choicegroup/1581676600/icon"]
 {
-	content: url(https://raw.githubusercontent.com/janvasiljevic/fri-dark-theme/master/icons/stick-man.png);
+	content: url(https://raw.githubusercontent.com/janvasiljevic/fri-dark-theme/testing/icons%2064%20px/stick-man%20-%2064px.png);
 }
-
 
 /* Anketa */
 [src="https://ucilnica.fri.uni-lj.si/theme/image.php/boost/questionnaire/1581676600/icon"]
 {
-	content: url(https://raw.githubusercontent.com/janvasiljevic/fri-dark-theme/testing/icons/anketa.png);
+	content: url(https://raw.githubusercontent.com/janvasiljevic/fri-dark-theme/testing/icons%2064%20px/anketa%20-%2064px.png);
 }
-
-
 
 /* Oddaja */
 [src="https://ucilnica.fri.uni-lj.si/theme/image.php/boost/assign/1581676600/icon"]
 {
-	content: url(https://raw.githubusercontent.com/janvasiljevic/fri-dark-theme/testing/icons/oddaja.png);
+	content: url(https://raw.githubusercontent.com/janvasiljevic/fri-dark-theme/testing/icons%2064%20px/oddaja%20-%2064px.png);
 }
 
 /* Excel */
 [src="https://ucilnica.fri.uni-lj.si/theme/image.php/boost/core/1581676600/f/spreadsheet-24"]
 {
-	content: url(https://raw.githubusercontent.com/janvasiljevic/fri-dark-theme/testing/icons/excel.png);
+	content: url(https://raw.githubusercontent.com/janvasiljevic/fri-dark-theme/testing/icons%2064%20px/excel%20-%2064px.png);
 }
-
-
-/* Slovar */
-[src="https://ucilnica.fri.uni-lj.si/theme/image.php/boost/glossary/1581676600/icon"]
-{
-	content: url(https://raw.githubusercontent.com/janvasiljevic/fri-dark-theme/testing/icons/letter.png);
-	height: 24px !important;
-	width: 24px !important;
-}
-
 
 /* Ena ikonca, ka je bila specificno uporabljena na Prog 1 za program izdelave matrik */
 [src="https://ucilnica.fri.uni-lj.si/theme/image.php/boost/core/1581676600/f/unknown-24"]
 {
-	content: url(https://raw.githubusercontent.com/janvasiljevic/fri-dark-theme/testing/icons/download-1.png);
+	content: url(https://raw.githubusercontent.com/janvasiljevic/fri-dark-theme/testing/icons%2064%20px/download%20-%2064px.png);
 }
 
-/* Free logo - inverted colours */
-[src="https://ucilnica.fri.uni-lj.si/pluginfile.php/1/core_admin/logocompact/100x100/1581676600/ucilnica-logo-01.png"]
+/* Ikonce pri katerih je treba overridat se velikosti */
+/* Slovar */
+[src="https://ucilnica.fri.uni-lj.si/theme/image.php/boost/glossary/1581676600/icon"]
 {
-	content: url(https://raw.githubusercontent.com/janvasiljevic/fri-dark-theme/testing/icons/fri-logo-inverted.png);
-	opacity: 0.5;
+	content: url(https://raw.githubusercontent.com/janvasiljevic/fri-dark-theme/testing/icons%2064%20px/letter%20-%2064px.png);
+	height: 24px !important;
+	width: 24px !important;
 }
 
+/* Neki kar resembla arhive oz. bazo - ponavad za stare izpite, npr. pri RK */
+[src="https://ucilnica.fri.uni-lj.si/theme/image.php/boost/core/1581676600/f/archive-24"]
+{
+	content: url(https://raw.githubusercontent.com/janvasiljevic/fri-dark-theme/testing/icons%2064%20px/pie-chart-2%20-%2064px.png);
+	height: 24px !important;
+	width: 24px !important;
+}
 
+/* Ponavadi za resitve starih izpitov, naprimer pri RK (again) */
+[src="https://ucilnica.fri.uni-lj.si/theme/image.php/boost/wiki/1581676600/icon"]
+{
+	content: url(https://raw.githubusercontent.com/janvasiljevic/fri-dark-theme/testing/icons%2064%20px/list%20-%2064px.png);
+	height: 24px !important;
+	width: 24px !important;
+}
+
+/* ############################## Ostalo ##############################*/
 /* Background image */
 body
 {
@@ -1193,6 +1162,13 @@ body
 	background-image: var(--bg-img) !important;
 	--bg-custom: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAMAAAAMCGV4AAAAD1BMV…JiZGBhhhMMYIIRTjCgcIE8VC4TKpeRmYEZiTtIzGNihhNMAJJAATdKr5xFAAAAAElFTkSuQmCC);
 	--bg-img: url('https://camo.githubusercontent.com/5b8e4cd1a5ce69b6affa17ebd8e4aee00c147618/68747470733a2f2f7374796c6973687468656d65732e6769746875622e696f2f4769744875622d4461726b2f696d616765732f6261636b67726f756e64732f62672d63726f737368617463682e706e67');
+}
+
+/* Free logo - inverted colours */
+[src="https://ucilnica.fri.uni-lj.si/pluginfile.php/1/core_admin/logocompact/100x100/1581676600/ucilnica-logo-01.png"]
+{
+	content: url(https://raw.githubusercontent.com/janvasiljevic/fri-dark-theme/testing/icons/fri-logo-inverted.png);
+	opacity: 0.5;
 }
 }
 
@@ -1214,7 +1190,6 @@ body
 	border: 1px solid #66d9ef !important;
 	border-radius: 4px;
 }
-
 
 [style="padding: 5px; font-weight: bold; background-color: rgb(51, 102, 255);"] > span
 {
@@ -1255,12 +1230,10 @@ ul[style="padding: 0px; margin: 0px 0px 10px 25px;"]
 	color: #ffffffd6 !important;
 }
 
-
 [style="color: rgb(0, 0, 0); font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: 20px; orphans: auto; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; display: inline !important; float: none;"]
 {
 	color: white !important;
 }
-
 
 [style="padding-bottom: 1px; overflow: auto; line-height: 20px;"] > p,
 ul,
@@ -1278,5 +1251,6 @@ a > .instancename
 a > .instancename:hover
 {
 	color: #fff !important;
+	text-decoration: none !important;
 }
 }
