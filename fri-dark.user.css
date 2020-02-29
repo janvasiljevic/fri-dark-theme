@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name         fri-dark
 @namespace    FRI 
-@version      0.0.7
+@version      0.0.8
 @license      unlicense
 @preprocessor default
 ==/UserStyle== */
@@ -96,13 +96,6 @@
 .btn-ligh:hover
 {
 	background-color: #000 !important;
-}
-
-.form-control
-{
-	background-color: #32393d !important;
-	border: 1px solid #4d4d4d;
-	color: #ffffffd9 !important;
 }
 
 .navbar-light .navbar-nav .nav-link
@@ -382,6 +375,7 @@ img
 	background-color: #000;
 }
 
+/* Animacije za loading screen */
 @keyframes bg-pulse-grey
 {
 	0%
@@ -1021,12 +1015,6 @@ table.flexible td,
 	text-shadow: 0 0px 0px #fff;
 }
 
-.dndupload-arrow
-{
-	background: url(https://raw.githubusercontent.com/janvasiljevic/fri-dark-theme/testing/icons/download.png) center no-repeat;
-	background-size: auto 60px;
-}
-
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link
 {
@@ -1042,6 +1030,58 @@ table.flexible td,
 .popover-region-header-container
 {
 	border-bottom: 1px solid #dddddd8c;
+}
+
+.form-control
+{
+	background-color: #32393d !important;
+	border: 1px solid #4d4d4d;
+	color: #ffffffd9 !important;
+}
+
+.nav-tabs .nav-link.active,
+.nav-tabs .nav-item.show .nav-link
+{
+	color: #495057;
+	background-color: #04040478;
+	border-color: #3c3c3c #3c3c3c #3c3c3c;
+}
+
+.nav-tabs .nav-link:hover,
+.nav-tabs .nav-link:focus
+{
+	border-color: #3c3c3c #3c3c3c #3c3c3c;
+}
+
+.nav-tabs
+{
+	border-bottom: 2px solid #3c3c3c;
+}
+
+input[type="text"]
+{
+	background-color: #000000bd;
+	color: white;
+	border: black;
+	padding: 7px;
+}
+
+.list-group-item-action:hover,
+.list-group-item-action:focus
+{
+	color: #2f2f2f !important;
+	text-decoration: none;
+	background-color: #ffffff7a;
+}
+
+.que.multianswer .feedbackspan
+{
+	background: #3e3e3ee3;
+}
+
+.fa-long-arrow-up:before
+{
+	color: #66d9ef;
 }
 
 /* Standard selectorji */
@@ -1060,6 +1100,11 @@ a:hover
 :focus
 {
 	outline: #a6e22e00 !important;
+}
+
+img.userpicture
+{
+	filter: brightness(0.7);
 }
 }
 
@@ -1158,7 +1203,7 @@ a:hover
 /* Background image */
 body
 {
-	color: white;
+	color: #ffffffd9 !important;
 	background-image: var(--bg-img) !important;
 	--bg-custom: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAMAAAAMCGV4AAAAD1BMV…JiZGBhhhMMYIIRTjCgcIE8VC4TKpeRmYEZiTtIzGNihhNMAJJAATdKr5xFAAAAAElFTkSuQmCC);
 	--bg-img: url('https://camo.githubusercontent.com/5b8e4cd1a5ce69b6affa17ebd8e4aee00c147618/68747470733a2f2f7374796c6973687468656d65732e6769746875622e696f2f4769744875622d4461726b2f696d616765732f6261636b67726f756e64732f62672d63726f737368617463682e706e67');
@@ -1169,6 +1214,19 @@ body
 {
 	content: url(https://raw.githubusercontent.com/janvasiljevic/fri-dark-theme/testing/icons/fri-logo-inverted.png);
 	opacity: 0.5;
+}
+
+/* Download arrow na my files sectionu */
+.dndupload-arrow
+{
+	background: url(https://raw.githubusercontent.com/janvasiljevic/fri-dark-theme/testing/icons/download.png) center no-repeat;
+	background-size: auto 60px;
+}
+
+/* Zatemnitev ikonce za nicelne prihajajoce aktivnosti */
+[src="https://ucilnica.fri.uni-lj.si/theme/image.php/boost/block_timeline/1581676600/activities"]
+{
+	filter: brightness(0.5);
 }
 }
 
@@ -1239,7 +1297,7 @@ ul[style="padding: 0px; margin: 0px 0px 10px 25px;"]
 ul,
 span
 {
-	color: white !important;
+	color: #ffffffd9 !important;
 }
 
 a > .instancename
