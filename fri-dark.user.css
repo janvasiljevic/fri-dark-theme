@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name         fri-dark
 @namespace    FRI 
-@version      0.0.8
+@version      0.0.9
 @license      unlicense
 @preprocessor default
 ==/UserStyle== */
@@ -1082,6 +1082,24 @@ input[type="text"]
 .fa-long-arrow-up:before
 {
 	color: #66d9ef;
+}
+
+.path-mod-workshop .userplan dd
+{
+	border-right: 1px solid #9c9c9c;
+	background-color: #424242;
+}
+
+.path-mod-workshop .userplan dd.active
+{
+	border: 1px solid #66d9ef;
+	border-bottom: 0px;
+	background-color: #000;
+}
+
+.path-mod-workshop .userplan dt.active
+{
+	background: #66d9ef;
 }
 
 /* Standard selectorji */
