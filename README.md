@@ -1,7 +1,7 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/janvasiljevic/fri-dark-theme/master/images/header.png" height="180"/>
+  <img src="https://raw.githubusercontent.com/janvasiljevic/fri-dark-theme/master/images/header.png" width="500" height="auto"/>
 </p>
-A dark theme for the FRI moodle online classroom, based on the popular Monokai colour scheme. Still in beta.
+A dark theme for the FRI moodle online classroom, based on the popular Monokai colour scheme. Requires the Stylus web browser extension.
 
 ##  :gear: Installation
 
@@ -9,7 +9,11 @@ Install [Stylus](https://add0n.com/stylus.html) for either [Firefox](https://add
 
 After the plugin is installed: 
 
-:sparkles: [Install the usercss](https://raw.githubusercontent.com/janvasiljevic/fri-dark-theme/master/fri-dark.user.css)
+[![Install directly with Stylus](https://img.shields.io/badge/Install%20directly%20with-Stylus-00adad.svg)](https://raw.githubusercontent.com/janvasiljevic/fri-dark-theme/master/fri-dark.user.css)
 
 
-![Drake knows](images/drake-knows.png)
+
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/janvasiljevic/fri-dark-theme/master/images/drake-knows.png" width="500" height="auto"/>
+</p>
