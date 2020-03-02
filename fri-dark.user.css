@@ -9,6 +9,7 @@
 @description  A dark theme of the FRI online moodle classrom for those long nights.
 @license      unlicense
 
+@preprocessor stylus
 @var checkbox fontEnable "Font enabled" 1
 @var text     fontSize   "Font size"    2.1em
 @var color    fontColor  "Font color"   #123456
