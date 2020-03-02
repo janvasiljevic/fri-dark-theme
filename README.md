@@ -1,7 +1,7 @@
 <p align="center">
   <img src="https://raw.githubusercontent.com/janvasiljevic/fri-dark-theme/master/images/header.png" width="500" height="auto"/>
 </p>
-A dark theme for the FRI moodle online classroom, based on the popular Monokai colour scheme. Requires the Stylus web browser extension. Supports auto-updating.
+A dark theme for the FRI moodle online classroom based on the popular Monokai colour scheme. Requires the Stylus web browser extension. Supports auto-updating.
 
 ##  :gear: Installation
 
@@ -14,9 +14,8 @@ After the plugin is installed:
 
 
 ##  :question: Changing the accent colours
-<img style="display:block; float: left; width: 100px;" src="https://raw.githubusercontent.com/janvasiljevic/fri-dark-theme/master/images/accent-colour-instr.png"/>
-
-You can easily change the accent colour by clicking the gear icon next to the style in the Stylus context menu. The colours should update in real time when changing them, but if the don't, re-enable the style and the changes should take place.
+<img src="https://raw.githubusercontent.com/janvasiljevic/fri-dark-theme/master/images/accent-colour-instr.png" align="left"  style=" width: 100px;" /> 
+<p> You can easily change the accent colours by clicking the gear icon next to the style in the Stylus context menu. The colours should update in real time when changing them, but if they don't, re-enable the style and the changes should take place. </p>
 
 
 
