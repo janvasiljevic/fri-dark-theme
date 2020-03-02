@@ -2,7 +2,7 @@
 @name         fri-dark
 @author       Jan Vasiljevic (https://github.com/janvasiljevic)
 @namespace    https://github.com/janvasiljevic/fri-dark-theme
-@version      0.0.10
+@version      0.1.0
 @homepageURL  https://github.com/janvasiljevic/fri-dark-theme
 @supportURL   https://github.com/janvasiljevic/fri-dark-theme/issues
 @updateURL    https://raw.githubusercontent.com/janvasiljevic/fri-dark-theme/testing/fri-dark.user.css
@@ -10,10 +10,10 @@
 @license      unlicense
 
 @preprocessor default
-@var checkbox fontEnable "Font enabled" 1
-@var text     fontSize   "Font size"    2.1em
-@var color    fontColor  "Font color"   #123456
-@var select fontName "Font name" ["Arial", "Consolas", "Times New Roman"]
+@var color    primaryAccentColour  "Primary accent colour"   rgb(253, 151, 31)
+@var color    secondaryAccentColour  "Secondary accent colour"   #F92672
+@var color    thirdAccentColour  "Secondary accent colour"   #66d9ef
+
 ==/UserStyle== */
 
 @-moz-document domain("ucilnica.fri.uni-lj.si") {
@@ -128,7 +128,7 @@
 	border-collapse: separate;
 	background-color: #fff0;
 	border-radius: 4px !important;
-	border: 1px solid #FD971F !important;
+	border: 1px solid var(--primaryAccentColour) !important;
 }
 
 .popover-region-container
@@ -148,28 +148,29 @@
 
 .fa-question-circle:before
 {
-	color: #66d9ef !important;
+	color: var(--thirdAccentColour) !important;
 }
 
 .form-control:focus
 {
-	border-color: #FD971F !important;
-	-webkit-box-shadow: 0 0 0 0.2rem #fd971f40 !important;
-	box-shadow: 0 0 0 0.2rem #fd971f40 !important;
+	border-color: var(--primaryAccentColour) !important;
+	-webkit-box-shadow: 0 0 0 0.2rem #fff0 !important;
+	box-shadow: 0 0 0 0.2rem var(--primaryAccentColour) !important;
 }
 
 .list-group-item.active
 {
 	box-sizing: border-box;
-	border: 0px solid #FD971F !important;
-	background-color: #FD971F !important;
+	border: 0px solid var(--primaryAccentColour) !important;
+	background-color: var(--primaryAccentColour) !important;
 	transition: 0.3s;
 }
 
 .list-group-item.active:hover
 {
 	color: #fff !important;
-	background-color: #fd971f52 !important;
+	background-color: var(--primaryAccentColour) !important;
+	opacity: 0.52;
 }
 
 #region-main
@@ -186,7 +187,7 @@ div#region-main.has-blocks.mb-3
 .badge-info
 {
 	background-color: #a6e22e00 !important;
-	border: 1px solid #66d9ef !important;
+	border: 1px solid var(--thirdAccentColour) !important;
 	border-radius: 4px;
 	padding: 7px;
 	transition: 0.5s;
@@ -194,14 +195,14 @@ div#region-main.has-blocks.mb-3
 
 .badge-info:hover
 {
-	background-color: #66d9ef !important;
-	border: 1px solid #66d9ef !important;
+	background-color: var(--thirdAccentColour) !important;
+	border: 1px solid var(--thirdAccentColour) !important;
 }
 
 /* Mihn strip na levi, ko si na predmetu / per teden */
 .course-content .current::before
 {
-	border-left: #FD971F 2px solid !important;
+	border-left: var(--primaryAccentColour) 2px solid !important;
 }
 
 .dashboard-card-deck.fixed-width-cards .dashboard-card
@@ -211,7 +212,7 @@ div#region-main.has-blocks.mb-3
 
 dashboard-card-deck.fixed-width-cards:focus .dashboard-card:focus
 {
-	border-color: #FD971F !important;
+	border-color: var(--primaryAccentColour) !important;
 }
 
 .text-muted,
@@ -258,7 +259,7 @@ a.dimmed_text:visited,
 .no-felement.fstatic,
 .path-backup .backup_progress .backup_stage
 {
-	color: #fff!important;
+	color: #fff !important;
 	background-color: #fff0;
 	border-radius: 4px !important;
 }
@@ -270,12 +271,12 @@ a.dimmed_text:visited,
 
 .fa-eye:before
 {
-	color: #66d9ef !important;
+	color: var(--thirdAccentColour) !important;
 }
 
 .fa-eye-slash:before
 {
-	color: #66d9ef !important;
+	color: var(--thirdAccentColour) !important;
 }
 
 .calendar_event_category
@@ -302,7 +303,7 @@ img
 {
 	color: #fff !important;
 	background-color: #373737f5;
-	border-color: #66d9ef;
+	border-color: var(--thirdAccentColour);
 }
 
 .bg-dark
@@ -372,7 +373,7 @@ img
 
 .fa-star:before
 {
-	color: #a6e22e !important;
+	color: var(--thirdAccentColour) !important;
 }
 
 .input-group-text
@@ -421,7 +422,7 @@ img
 
 [style="padding: 5px; font-weight: bold; background-color: rgb(151, 206, 104);"] > span
 {
-	color: #66d9ef !important;
+	color: var(--thirdAccentColour) !important;
 	padding-left: 10px;
 }
 
@@ -429,14 +430,14 @@ img
 #yui_3_17_2_1_1582663948486_110
 {
 	background-color: rgba(255, 255, 255, 0) !important;
-	border: 1px solid #66D9EF !important;
+	border: 1px solid var(--thirdAccentColour) !important;
 	border-radius: 4px;
 }
 
 /* Predavanja text */
 #yui_3_17_2_1_1582663948486_110 > span
 {
-	color: #66D9EF !important;
+	color: var(--thirdAccentColour) !important;
 	padding-left: 10px;
 }
 
@@ -450,20 +451,20 @@ span.unread
 .btn-primary:hover
 {
 	color: #fff !important;
-	background-color: #fd971f !important;
-	border-color: #fd971f !important;
+	background-color: var(--primaryAccentColour) !important;
+	border-color: var(--primaryAccentColour) !important;
 }
 
 .btn-primary
 {
 	color: #fff !important;
 	background-color: #201f1ff5;
-	border-color: #fd971f;
+	border-color: var(--primaryAccentColour);
 }
 
 .page-item.active .page-link
 {
-	border-color: #fd971f;
+	border-color: var(--primaryAccentColour);
 }
 
 .userlist table#participants td
@@ -479,17 +480,17 @@ span.unread
 
 ::-webkit-scrollbar-track
 {
-	background: #464646;
+	background: #2b2b2b;
 }
 
 ::-webkit-scrollbar-thumb
 {
-	background: #403e3e;
+	background: #645f5f99;
 }
 
 ::-webkit-scrollbar-thumb:hover
 {
-	background: #9f9f9f;
+	background: #353535;
 }
 
 /* Firefox Scrollbar support, added by @DefaultSimon */
@@ -521,31 +522,31 @@ html
 .alert-danger,
 #page-admin-index .adminerror
 {
-	color: #66d9ef;
+	color: var(--thirdAccentColour);
 	background-color: #562f2d00;
-	border: 1px solid #66d9ef !important;
+	border: 1px solid var(--thirdAccentColour) !important;
 }
 
 #yui_3_17_2_1_1582666237952_20 > button
 {
-	color: #66d9ef;
+	color: var(--thirdAccentColour);
 }
 
 .alert-info
 {
-	color: #66d9ef;
+	color: var(--thirdAccentColour);
 	background-color: #562f2d00;
-	border: 1px solid #66d9ef !important;
+	border: 1px solid var(--thirdAccentColour) !important;
 }
 
 .switch input:checked + label::before
 {
-	background-color: #FD971F;
+	background-color: var(--primaryAccentColour);
 }
 
 .custom-radio .custom-control-input:checked ~ .custom-control-label::before
 {
-	background-color: #FD971F;
+	background-color: var(--primaryAccentColour);
 }
 
 .page-item disabled
@@ -591,7 +592,7 @@ html
 .dropdown-item:active
 {
 	color: #fff;
-	background-color: #FD971F;
+	background-color: var(--primaryAccentColour);
 }
 
 .popover-region-container
@@ -661,7 +662,7 @@ table.flexible thead th,
 
 .form-autocomplete-suggestions li:hover
 {
-	background-color: #fd971f !important;
+	background-color: var(--primaryAccentColour) !important;
 	color: #fff;
 }
 
@@ -686,7 +687,7 @@ table.flexible thead th,
 
 .alert.alert-info.alert-block > .close
 {
-	color: #66d9ef;
+	color: var(--thirdAccentColour);
 }
 
 .maincalendar .calendarmonth td,
@@ -707,7 +708,7 @@ table.flexible thead th,
 
 .btn-link
 {
-	color: #F92672 !important;
+	color: var(--secondary) !important;
 }
 
 .custom-select
@@ -721,7 +722,7 @@ table.flexible thead th,
 
 .custom-select:focus
 {
-	border-color: #fd971f !important;
+	border-color: var(--primaryAccentColour) !important;
 }
 
 .course-content ul li.section.main
@@ -744,7 +745,7 @@ table.flexible thead th,
 
 .message.clickable[aria-checked="true"]
 {
-	border: 1px solid #fd971f !important;
+	border: 1px solid var(--primaryAccentColour) !important;
 }
 
 .message-app .message.received .tail
@@ -754,12 +755,12 @@ table.flexible thead th,
 
 .icon.fa.fa-check-circle.fa-fw
 {
-	color: #fd971f;
+	color: var(--primaryAccentColour);
 }
 
 .ml-auto.close
 {
-	color: #fd971f;
+	color: var(--primaryAccentColour);
 }
 
 .message-app .message.send .tail
@@ -813,14 +814,14 @@ table.flexible thead th,
 .show > .btn-primary.dropdown-toggle
 {
 	color: #fff;
-	background-color: #fd971f;
+	background-color: var(--primaryAccentColour);
 	border-color: #fff;
 }
 
 .btn-primary:focus,
 .btn-primary.focus
 {
-	-webkit-box-shadow: 0 0 0 0.2rem rgba(3, 170, 112, .5);
+	-webkit-box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0);
 	box-shadow: 0 0 0 0.2rem rgba(3, 170, 112, 0);
 }
 
@@ -831,7 +832,7 @@ table.flexible thead th,
 
 .moodle-dialogue-base .closebutton::after
 {
-	color: #fd971f;
+	color: var(--primaryAccentColour);
 }
 
 table.quizreviewsummary th.cell
@@ -856,9 +857,9 @@ table.quizreviewsummary td.cell
 .que .outcome,
 .que .comment
 {
-	color: #66D9EF;
+	color: var(--thirdAccentColour);
 	background-color: #fcefdc00;
-	border: 1px solid #66D9EF !important;
+	border: 1px solid var(--thirdAccentColour) !important;
 	border-radius: 10px;
 }
 
@@ -876,14 +877,15 @@ table.flexible td,
 
 #page-mod-quiz-view table.quizattemptsummary tr.bestrow td
 {
-	border-color: #66D9EF;
+	border-color: var(--thirdAccentColour);
 	background-color: #1e1e1e;
 }
 
 .path-mod-quiz #mod_quiz_navblock .qnbutton.correct .trafficlight
 {
 	background-image: url(/theme/image.php/boost/theme/1581676595/mod/quiz/checkmark);
-	background-color: #66d9efb8;
+	background-color: var(--thirdAccentColour);
+	opacity: 50%;
 }
 
 .text-success,
@@ -891,7 +893,7 @@ table.flexible td,
 .notifysuccess,
 .connected
 {
-	color: #66D9EF !important;
+	color: var(--thirdAccentColour) !important;
 }
 
 /* ############################## Homework/ Quiz submissions ##############################*/
@@ -900,30 +902,30 @@ table.flexible td,
 .path-mod-assign a:link.submissionstatussubmitted
 {
 	color: #fff;
-	border: 2px solid #66d9ef;
-	background-color: #66d9ef00;
+	border: 2px solid var(--thirdAccentColour);
+	background-color: #fff0;
 }
 
 .path-mod-assign td.submissiongraded,
 .path-mod-assign div.submissiongraded
 {
 	color: #fff;
-	border: 2px solid #66d9ef;
-	background-color: #66d9ef00;
+	border: 2px solid var(--thirdAccentColour);
+	background-color: #fff0;
 }
 
 .path-mod-assign td.earlysubmission,
 .path-mod-assign div.earlysubmission
 {
 	color: #fff;
-	border: 2px solid #66d9ef;
-	background-color: #66d9ef00;
+	border: 2px solid var(--thirdAccentColour);
+	background-color: #fff0;
 }
 
 /* ############################## Forums ##############################*/
 .fa-star:before
 {
-	color: #66d9ef !important;
+	color: var(--thirdAccentColour) !important;
 }
 
 .region_main_settings_menu_proxy
@@ -933,12 +935,12 @@ table.flexible td,
 
 .fa-question-circle:before
 {
-	color: #66d9ef !important;
+	color: var(--thirdAccentColour) !important;
 }
 
 .fa-long-arrow-down:before
 {
-	color: #66d9ef !important;
+	color: var(--thirdAccentColour) !important;
 }
 
 /* Unsubmitted homework  */
@@ -952,7 +954,7 @@ table.flexible td,
 .message-app .contact-status.online
 {
 	border: 1px solid #fff;
-	background-color: #66d9ef;
+	background-color: var(--thirdAccentColour);
 }
 
 .block .block-cards .course-summaryitem
@@ -1029,7 +1031,7 @@ table.flexible td,
 .nav-pills .show > .nav-link
 {
 	color: #fff;
-	background-color: #FD971F;
+	background-color: var(--primaryAccentColour);
 }
 
 .fa-check:before
@@ -1091,7 +1093,7 @@ input[type="text"]
 
 .fa-long-arrow-up:before
 {
-	color: #66d9ef;
+	color: var(--thirdAccentColour);
 }
 
 .path-mod-workshop .userplan dd
@@ -1102,21 +1104,21 @@ input[type="text"]
 
 .path-mod-workshop .userplan dd.active
 {
-	border: 1px solid #66d9ef;
+	border: 1px solid var(--thirdAccentColour);
 	border-bottom: 0px;
-	background-color: #000;
+	background-color: #353535;
 }
 
 .path-mod-workshop .userplan dt.active
 {
-	background: #66d9ef;
+	background: var(--thirdAccentColour);
 }
 
 pre
 {
 	background: #48484800;
 	color: #ffffff;
-	border: 1px solid #66d9ef;
+	border: 1px solid var(--thirdAccentColour);
 	padding: 15px;
 	margin: 10px;
 }
@@ -1125,7 +1127,7 @@ pre
 a
 {
 	transition: 0.05s;
-	color: #F92672 !important;
+	color: var(--secondaryAccentColour) !important;
 }
 
 a:hover
@@ -1238,11 +1240,13 @@ img.userpicture
 
 /* ############################## Ostalo ##############################*/
 /* Background image */
+
+
 body
 {
 	color: #ffffffd9 !important;
 	background-image: var(--bg-img) !important;
-	--bg-custom: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAMAAAAMCGV4AAAAD1BMV…JiZGBhhhMMYIIRTjCgcIE8VC4TKpeRmYEZiTtIzGNihhNMAJJAATdKr5xFAAAAAElFTkSuQmCC);
+	
 	--bg-img: url('https://camo.githubusercontent.com/5b8e4cd1a5ce69b6affa17ebd8e4aee00c147618/68747470733a2f2f7374796c6973687468656d65732e6769746875622e696f2f4769744875622d4461726b2f696d616765732f6261636b67726f756e64732f62672d63726f737368617463682e706e67');
 }
 
@@ -1274,28 +1278,33 @@ body
 [style="padding: 5px; font-weight: bold; background-color: rgb(51, 102, 255);"]
 {
 	background-color: rgba(255, 255, 255, 0) !important;
-	border: 1px solid #FD971F !important;
+	border: 1px solid var(--primaryAccentColour) !important;
 	border-radius: 4px;
 }
+
+.contentwithoutlink > .no-overflow > .no-overflow  * {
+	background-color: #fff0 !important;
+}
+
 
 /* Domace n, kvizi, vaje, izpiti*/
 [style="padding: 5px; font-weight: bold; background-color: rgb(151, 206, 104);"]
 {
 	background-color: rgba(255, 255, 255, 0) !important;
-	border: 1px solid #66d9ef !important;
+	border: 1px solid var(--thirdAccentColour) !important;
 	border-radius: 4px;
 }
 
 [style="padding: 5px; font-weight: bold; background-color: rgb(51, 102, 255);"] > span
 {
-	color: #FD971F !important;
+	color: var(--primaryAccentColour) !important;
 	padding-left: 10px;
 }
 
 /* ############################## Specificly physics ##############################*/
 [style="color: rgb(152, 202, 62);"]
 {
-	color: #66D9EF !important;
+	color: var(--thirdAccentColour) !important;
 }
 
 /* ############################## Specificly ODV ##############################*/
@@ -1340,7 +1349,7 @@ span
 a > .instancename
 {
 	padding-left: 4px;
-	color: #F92672 !important;
+	color: var(--secondaryAccentColour) !important;
 }
 
 a > .instancename:hover
