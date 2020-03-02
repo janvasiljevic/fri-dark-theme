@@ -1151,25 +1151,25 @@ img.userpicture
 /* Forumi */
 [src="https://ucilnica.fri.uni-lj.si/theme/image.php/boost/forum/1581676600/icon"]
 {
-	content: url(https://raw.githubusercontent.com/janvasiljevic/fri-dark-theme/testing/icons%2064%20px/speech-bubble-1%20-%2064px.png);
+	content: url(https://raw.githubusercontent.com/janvasiljevic/fri-dark-theme/testing/icons64px/speech-bubble-164px.png);
 }
 
 /* Kvizi / domace naloge z multiple choici */
 [src="https://ucilnica.fri.uni-lj.si/theme/image.php/boost/quiz/1581676600/icon"]
 {
-	content: url(https://raw.githubusercontent.com/janvasiljevic/fri-dark-theme/testing/icons%2064%20px/bookmark%20-%2064px.png);
+	content: url(https://raw.githubusercontent.com/janvasiljevic/fri-dark-theme/testing/icons64px/bookmark64px.png);
 }
 
 /* PDF - ji */
 [src="https://ucilnica.fri.uni-lj.si/theme/image.php/boost/core/1581676600/f/pdf-24"]
 {
-	content: url(https://raw.githubusercontent.com/janvasiljevic/fri-dark-theme/testing/icons%2064%20px/save%20-%2064px.png);
+	content: url(https://raw.githubusercontent.com/janvasiljevic/fri-dark-theme/testing/icons64px/save64px.png);
 }
 
 /* Internal linki - ala obvetnosti studenta, osnovni podatki o predmetu... */
 [src="https://ucilnica.fri.uni-lj.si/theme/image.php/boost/page/1581676600/icon"]
 {
-	content: url(https://raw.githubusercontent.com/janvasiljevic/fri-dark-theme/testing/icons%2064%20px/book%20-%2064px.png);
+	content: url(https://raw.githubusercontent.com/janvasiljevic/fri-dark-theme/testing/icons64px/book64px.png);
 }
 
 [src="https://ucilnica.fri.uni-lj.si/theme/image.php/boost/core/1581676600/f/document-24"]
@@ -1179,43 +1179,43 @@ img.userpicture
 
 [src="https://ucilnica.fri.uni-lj.si/theme/image.php/boost/url/1581676600/icon"]
 {
-	content: url(https://raw.githubusercontent.com/janvasiljevic/fri-dark-theme/testing/icons%2064%20px/right-arrow%20-%2064px.png);
+	content: url(https://raw.githubusercontent.com/janvasiljevic/fri-dark-theme/testing/icons64px/right-arrow64px.png);
 }
 
 [src="https://ucilnica.fri.uni-lj.si/theme/image.php/boost/choicegroup/1581676600/icon"]
 {
-	content: url(https://raw.githubusercontent.com/janvasiljevic/fri-dark-theme/testing/icons%2064%20px/stick-man%20-%2064px.png);
+	content: url(https://raw.githubusercontent.com/janvasiljevic/fri-dark-theme/testing/icons64px/stick-man64px.png);
 }
 
 /* Anketa */
 [src="https://ucilnica.fri.uni-lj.si/theme/image.php/boost/questionnaire/1581676600/icon"]
 {
-	content: url(https://raw.githubusercontent.com/janvasiljevic/fri-dark-theme/testing/icons%2064%20px/anketa%20-%2064px.png);
+	content: url(https://raw.githubusercontent.com/janvasiljevic/fri-dark-theme/testing/icons64px/anketa64px.png);
 }
 
 /* Oddaja */
 [src="https://ucilnica.fri.uni-lj.si/theme/image.php/boost/assign/1581676600/icon"]
 {
-	content: url(https://raw.githubusercontent.com/janvasiljevic/fri-dark-theme/testing/icons%2064%20px/oddaja%20-%2064px.png);
+	content: url(https://raw.githubusercontent.com/janvasiljevic/fri-dark-theme/testing/icons64px/oddaja64px.png);
 }
 
 /* Excel */
 [src="https://ucilnica.fri.uni-lj.si/theme/image.php/boost/core/1581676600/f/spreadsheet-24"]
 {
-	content: url(https://raw.githubusercontent.com/janvasiljevic/fri-dark-theme/testing/icons%2064%20px/excel%20-%2064px.png);
+	content: url(https://raw.githubusercontent.com/janvasiljevic/fri-dark-theme/testing/icons64px/excel64px.png);
 }
 
 /* Ena ikonca, ka je bila specificno uporabljena na Prog 1 za program izdelave matrik */
 [src="https://ucilnica.fri.uni-lj.si/theme/image.php/boost/core/1581676600/f/unknown-24"]
 {
-	content: url(https://raw.githubusercontent.com/janvasiljevic/fri-dark-theme/testing/icons%2064%20px/download%20-%2064px.png);
+	content: url(https://raw.githubusercontent.com/janvasiljevic/fri-dark-theme/testing/icons64px/download64px.png);
 }
 
 /* Ikonce pri katerih je treba overridat se velikosti */
 /* Slovar */
 [src="https://ucilnica.fri.uni-lj.si/theme/image.php/boost/glossary/1581676600/icon"]
 {
-	content: url(https://raw.githubusercontent.com/janvasiljevic/fri-dark-theme/testing/icons%2064%20px/letter%20-%2064px.png);
+	content: url(https://raw.githubusercontent.com/janvasiljevic/fri-dark-theme/testing/icons64px/letter64px.png);
 	height: 24px !important;
 	width: 24px !important;
 }
@@ -1223,7 +1223,7 @@ img.userpicture
 /* Neki kar resembla arhive oz. bazo - ponavad za stare izpite, npr. pri RK */
 [src="https://ucilnica.fri.uni-lj.si/theme/image.php/boost/core/1581676600/f/archive-24"]
 {
-	content: url(https://raw.githubusercontent.com/janvasiljevic/fri-dark-theme/testing/icons%2064%20px/pie-chart-2%20-%2064px.png);
+	content: url(https://raw.githubusercontent.com/janvasiljevic/fri-dark-theme/testing/icons64px/pie-chart-264px.png);
 	height: 24px !important;
 	width: 24px !important;
 }
@@ -1231,7 +1231,7 @@ img.userpicture
 /* Ponavadi za resitve starih izpitov, naprimer pri RK (again) */
 [src="https://ucilnica.fri.uni-lj.si/theme/image.php/boost/wiki/1581676600/icon"]
 {
-	content: url(https://raw.githubusercontent.com/janvasiljevic/fri-dark-theme/testing/icons%2064%20px/list%20-%2064px.png);
+	content: url(https://raw.githubusercontent.com/janvasiljevic/fri-dark-theme/testing/icons64px/list64px.png);
 	height: 24px !important;
 	width: 24px !important;
 }
