@@ -2,13 +2,18 @@
 @name         fri-dark
 @author       Jan Vasiljevic (https://github.com/janvasiljevic)
 @namespace    https://github.com/janvasiljevic/fri-dark-theme
-@version      0.0.9
+@version      0.0.10
 @homepageURL  https://github.com/janvasiljevic/fri-dark-theme
 @supportURL   https://github.com/janvasiljevic/fri-dark-theme/issues
 @updateURL    https://raw.githubusercontent.com/janvasiljevic/fri-dark-theme/testing/fri-dark.user.css
 @description  A dark theme of the FRI online moodle classrom for those long nights.
 @license      unlicense
-@preprocessor default
+
+@preprocessor stylus
+@var checkbox fontEnable "Font enabled" 1
+@var text     fontSize   "Font size"    2.1em
+@var color    fontColor  "Font color"   #123456
+@var select fontName "Font name" ["Arial", "Consolas", "Times New Roman"]
 ==/UserStyle== */
 
 @-moz-document domain("ucilnica.fri.uni-lj.si") {
