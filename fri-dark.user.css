@@ -2,7 +2,7 @@
 @name         fri-dark
 @author       Jan Vasiljevic (https://github.com/janvasiljevic)
 @namespace    https://github.com/janvasiljevic/fri-dark-theme
-@version      0.1.1
+@version      0.1.2
 @homepageURL  https://github.com/janvasiljevic/fri-dark-theme
 @supportURL   https://github.com/janvasiljevic/fri-dark-theme/issues
 @updateURL    https://raw.githubusercontent.com/janvasiljevic/fri-dark-theme/master/fri-dark.user.css
@@ -1240,13 +1240,10 @@ img.userpicture
 
 /* ############################## Ostalo ##############################*/
 /* Background image */
-
-
 body
 {
 	color: #ffffffd9 !important;
 	background-image: var(--bg-img) !important;
-	
 	--bg-img: url('https://camo.githubusercontent.com/5b8e4cd1a5ce69b6affa17ebd8e4aee00c147618/68747470733a2f2f7374796c6973687468656d65732e6769746875622e696f2f4769744875622d4461726b2f696d616765732f6261636b67726f756e64732f62672d63726f737368617463682e706e67');
 }
 
@@ -1282,10 +1279,20 @@ body
 	border-radius: 4px;
 }
 
-.contentwithoutlink > .no-overflow > .no-overflow  * {
+.contentwithoutlink > .no-overflow > .no-overflow *
+{
 	background-color: #fff0 !important;
 }
 
+[style="color: rgb(136, 136, 136); font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 13.3px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: 21.28px; orphans: auto; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; display: inline !important; float: none; background-color: rgb(255, 255, 255);"],
+[style="font-style: italic; color: rgb(136, 136, 136); font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 13.3px; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: 21.28px; orphans: auto; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);"],
+[style="margin: 0px 0px 10px; color: rgb(51, 51, 51); font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 13.3px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: 21.28px; orphans: auto; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);"],
+[style="color: rgb(128, 128, 128); font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 13.3px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: 21.28px; orphans: auto; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; display: inline !important; float: none; background-color: rgb(255, 255, 255);"],
+[style="color: rgb(51, 51, 51); font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 13.3px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: 21.28px; orphans: auto; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; display: inline !important; float: none; background-color: rgb(255, 255, 255);"]
+{
+	background-color: #000 !important;
+	color: #ffffffc9 !important;
+}
 
 /* Domace n, kvizi, vaje, izpiti*/
 [style="padding: 5px; font-weight: bold; background-color: rgb(151, 206, 104);"]
