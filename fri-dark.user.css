@@ -2,7 +2,7 @@
 @name         fri-dark
 @author       Jan Vasiljevic (https://github.com/janvasiljevic)
 @namespace    https://github.com/janvasiljevic/fri-dark-theme
-@version      0.1.3
+@version      0.1.4
 @homepageURL  https://github.com/janvasiljevic/fri-dark-theme
 @supportURL   https://github.com/janvasiljevic/fri-dark-theme/issues
 @updateURL    https://raw.githubusercontent.com/janvasiljevic/fri-dark-theme/master/fri-dark.user.css
@@ -1228,6 +1228,14 @@ img.userpicture
 [src="https://ucilnica.fri.uni-lj.si/theme/image.php/boost/glossary/1581676600/icon"]
 {
 	content: url(https://raw.githubusercontent.com/janvasiljevic/fri-dark-theme/testing/icons64px/letter64px.png);
+	height: 24px !important;
+	width: 24px !important;
+}
+
+/* DN Za oddaje ois */
+[src="https://ucilnica.fri.uni-lj.si/theme/image.php/boost/workshop/1581676600/icon"]
+{
+	content: url(https://raw.githubusercontent.com/janvasiljevic/fri-dark-theme/master/icons64px/transfer-1-64px.png);
 	height: 24px !important;
 	width: 24px !important;
 }
