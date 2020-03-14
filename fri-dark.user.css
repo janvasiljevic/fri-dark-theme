@@ -2,7 +2,7 @@
 @name         fri-dark
 @author       Jan Vasiljevic (https://github.com/janvasiljevic)
 @namespace    https://github.com/janvasiljevic/fri-dark-theme
-@version      0.1.4
+@version      0.1.6
 @homepageURL  https://github.com/janvasiljevic/fri-dark-theme
 @supportURL   https://github.com/janvasiljevic/fri-dark-theme/issues
 @updateURL    https://raw.githubusercontent.com/janvasiljevic/fri-dark-theme/master/fri-dark.user.css
@@ -1128,8 +1128,43 @@ pre
 	margin: 10px;
 }
 
-pre > span {
+pre > span
+{
 	background-color: #000000c4 !important;
+}
+
+input[type="radio" i][value="1"]::before
+{	
+	
+	content: "";
+	height: 13px;
+	width: 13px;
+	background-color: #28282800;
+	border: 3px solid #ffffffe3;
+	border-radius: 50%;
+	display: inline-block;
+	position: relative;
+	top: -4px;
+	z-index: 0;
+}
+
+input[type="checkbox" i][checked="checked"]::after
+{	
+	
+	content: "";
+	height: 13px;
+	width: 13px;
+	background-color: #28282800;
+	border: 2px solid #ffffffe3;
+	border-radius: 10%;
+	display: inline-block;
+	position: relative;
+	top: -4px;
+}
+
+.hljs {
+	color: #ffffffc2;
+    background: #3a3a3a;
 }
 
 
@@ -1366,7 +1401,7 @@ ul[style="padding: 0px; margin: 0px 0px 10px 25px;"]
 
 [style="padding-bottom: 1px; overflow: auto; line-height: 20px;"] > p,
 ul,
-span
+span:not(.hljs.css)
 {
 	color: #ffffffd9 !important;
 }
