@@ -1,7 +1,7 @@
 <p align="center">
   <img src="https://raw.githubusercontent.com/janvasiljevic/fri-dark-theme/master/images/header.png" width="500" height="auto"/>
 </p>
-A dark theme for the FRI moodle online classroom based on the popular Monokai colour scheme. Requires the Stylus web browser extension. Supports auto-updating.
+A dark theme for the FRI moodle online classroom based on the popular Monokai colour scheme with further customization possible. Requires the Stylus web browser extension. There is no need to manually update the theme as auto-updating is on by default. Icon replacement now isn't guaranteed to work all the time, but this will be fixed in upcoming updates.
 
 ##  :gear: Installation
 
