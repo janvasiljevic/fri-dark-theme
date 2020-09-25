@@ -15,7 +15,7 @@ After the plugin is installed:
 
 ##  :question: Changing the accent colours
 <img src="https://raw.githubusercontent.com/janvasiljevic/fri-dark-theme/master/images/accent-colour-instr.png" align="left"  style=" width: 100px;" /> 
-<p> You can easily change the accent colours by clicking the gear icon next to the style in the Stylus context menu. The colours should update in real time when changing them, but if they don't, re-enable the style and the changes should take place. </p>
+<p> You can easily change the accent colours or icons by clicking the gear icon next to the style in the Stylus context menu. The colours should update in real time when changing them, but if they don't, re-enable the style and the changes should take place. Icons sometimes require multiple resets, as the browser caches them. </p>
 
 
 
