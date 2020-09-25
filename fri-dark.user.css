@@ -2,7 +2,7 @@
 @name         fri-dark
 @author       Jan Vasiljevic (https://github.com/janvasiljevic)
 @namespace    https://github.com/janvasiljevic/fri-dark-theme
-@version      2021.1.3
+@version      2021.1.5
 @homepageURL  https://github.com/janvasiljevic/fri-dark-theme
 @supportURL   https://github.com/janvasiljevic/fri-dark-theme/issues
 @updateURL    https://raw.githubusercontent.com/janvasiljevic/fri-dark-theme/master/fri-dark.user.css
@@ -16,6 +16,7 @@
 @var select   icons "Icons" ["mono:Mono white icons", "default:Default Icons"]
 @var select   logo "Logo" ["dark:Dark theme logo", "default:Default logo", "vapor:Vaporwave logo", "alt01:Alt 01 logo", "alt02:Alt 02 logo"]
 @var select   background "Background patterns" ["default:Default", "binding_dark:Binding dark", "curls:Curls", "natural_black:Natural black", "webb_dark:Webb dark", "wheat:Wheat", "serious:Y so serious"]
+@var checkbox urnik "Urnik" 1
 
 ==/UserStyle== */
 @-moz-document domain("ucilnica.fri.uni-lj.si") {
@@ -30,7 +31,7 @@
     }
 
     #searchform_button {
-        margin: 10px;
+        margin-left: 10px;
     }
 
     /* Background area pri levi strani */
@@ -1016,22 +1017,26 @@
 
     a:hover {
         color: #fff !important;
-        background-color: transparent !important; text-decoration: none !important;
+        background-color: transparent !important;
+        text-decoration: none !important;
     }
 
     a:active {
         background: none !important;
-        background-color: transparent !important; text-decoration: none !important;
+        background-color: transparent !important;
+        text-decoration: none !important;
     }
-    
+
     a:focus {
         background: none !important;
-        background-color: transparent !important; text-decoration: none !important;
+        background-color: transparent !important;
+        text-decoration: none !important;
     }
 
     a:selection {
         background: none !important;
-        background-color: transparent !important; text-decoration: none !important;
+        background-color: transparent !important;
+        text-decoration: none !important;
     }
 
 
@@ -1046,11 +1051,11 @@
     img.userpicture {
         filter: brightness(0.7);
     }
-    
-    .card-body .column  {
+
+    .card-body .column {
         padding: 6px !important;
-    } 
-    
+    }
+
     .calendar_event_other {
         background-color: transparent !important;
     }
@@ -1377,16 +1382,157 @@
     }
 }
 
-@-moz-document url("https://ucilnica.fri.uni-lj.si/2021/login/index.php"), url("https://ucilnica.fri.uni-lj.si/login/index.php") {
+@-moz-document url("https://ucilnica.fri.uni-lj.si/2021/login/index.php"),
+url("https://ucilnica.fri.uni-lj.si/login/index.php") {
     #region-main {
         background-color: transparent !important;
     }
-    
-    [role="main"]> .mt-3{
+
+    [role="main"] > .mt-3 {
         display: none !important;
     }
-    
+
     #page-footer {
         display: none !important;
+    }
+}
+
+@-moz-document regexp("^(?=.*\\bhttps://urnik.fri.uni-lj.si/timetable/fri-\\b)(?=.*\\ballocations\\b).*$") {
+    
+
+    
+    
+    /* ############################## Scrollbar behaviour ##############################*/
+    ::-webkit-scrollbar {
+        width: 8px;
+    }
+
+    ::-webkit-scrollbar-track {
+        background: #2b2b2b;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: #645f5f99;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        background: #353535;
+    }
+
+    /* Firefox Scrollbar support, added by @DefaultSimon */
+    #nav-drawer,
+    html {
+        scrollbar-width: thin;
+        scrollbar-color: #403e3e #464646;
+    }
+    
+    & when (@urnik =1) {
+    
+   
+    body {
+        color: white;
+    }
+    
+    body a {
+        color: @secondaryAccentColour;
+    }
+    
+    .grid-entry{
+        margin: 4px;
+        background-color: #00000054 !important;
+        border: #ffffff7d 1px solid !important;
+        
+    }
+    
+    .grid-entry a{
+        color: @primaryAccentColour;
+    }
+    
+    .grid-entry span{
+        color: white !important;
+    }
+    
+    .grid-entry .link-teacher{
+        color: @secondaryAccentColour;
+    }
+    
+    .grid-entry .bottom-aligned a{
+        color: @thirdAccentColour !important;
+        filter: opacity(0.6);
+    }
+    
+    .entry-hover{
+        background-color: #1d1d1d;
+        border: #ffffff7d 1px solid !important;
+        color: #ffffffe8;
+    }
+    
+    .grid-complete-row{
+        border: 0;
+    }
+    
+    .grid-complete-row:hover{
+        border: 0;
+    }
+    
+    
+    .grid-complete-row:nth-of-type(even) {
+    background-color: #7a808d29 !important;
+        border-radius: 7px;
+    }
+    
+    .grid-day-column{
+        border: 0;
+    }
+
+
+    
+    
+    & when (@background =default) {
+        body {
+            background-image: url('https://camo.githubusercontent.com/5b8e4cd1a5ce69b6affa17ebd8e4aee00c147618/68747470733a2f2f7374796c6973687468656d65732e6769746875622e696f2f4769744875622d4461726b2f696d616765732f6261636b67726f756e64732f62672d63726f737368617463682e706e67') !important;
+        }
+    }
+
+    & when (@background =binding_dark) {
+        body {
+            background-image: url(https://raw.githubusercontent.com/janvasiljevic/fri-dark-theme/master/patterns/binding_dark.png) !important;
+        }
+    }
+
+    & when (@background =curls) {
+        body {
+            background-image: url(https://raw.githubusercontent.com/janvasiljevic/fri-dark-theme/master/patterns/curls.png) !important;
+        }
+    }
+
+    & when (@background =natural_black) {
+        body {
+            background-image: url(https://raw.githubusercontent.com/janvasiljevic/fri-dark-theme/master/patterns/ep_naturalblack.png) !important;
+        }
+    }
+    & when (@background =webb_dark) {
+        body {
+            background-image: url(https://raw.githubusercontent.com/janvasiljevic/fri-dark-theme/master/patterns/webb-dark.png) !important;
+        }
+    }
+    & when (@background =wheat) {
+        body {
+            background-image: url(https://raw.githubusercontent.com/janvasiljevic/fri-dark-theme/master/patterns/whaet-new.png) !important;
+        }
+    }
+
+    & when (@background =serious) {
+        body {
+            background-image: url(https://raw.githubusercontent.com/janvasiljevic/fri-dark-theme/master/patterns/y-so-serious.png) !important;
+        }
+    }
+
+
+
+    /* Zatemnitev ikonce za nicelne prihajajoce aktivnosti */
+    [src="https://ucilnica.fri.uni-lj.si/theme/image.php/boost/block_timeline/1581676600/activities"] {
+        filter: brightness(0.5);
+    }
     }
 }
