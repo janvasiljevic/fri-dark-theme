@@ -2,17 +2,19 @@
 @name         fri-dark
 @author       Jan Vasiljevic (https://github.com/janvasiljevic)
 @namespace    https://github.com/janvasiljevic/fri-dark-theme
-@version      2021.0.1
+@version      2021.1.0
 @homepageURL  https://github.com/janvasiljevic/fri-dark-theme
 @supportURL   https://github.com/janvasiljevic/fri-dark-theme/issues
 @updateURL    https://raw.githubusercontent.com/janvasiljevic/fri-dark-theme/master/fri-dark.user.css
 @description  A dark theme of the FRI online moodle classrom for those long nights.
 @license      unlicense
 
-@preprocessor default
+@preprocessor less
 @var color    primaryAccentColour  "Primary accent colour"   rgb(253, 151, 31)
 @var color    secondaryAccentColour  "Secondary accent colour"   #F92672
 @var color    thirdAccentColour  "Secondary accent colour"   #66d9ef
+@var select   icons "Icons" ["mono:Mono white icons", "default:Default Icons"]
+@var select   logo "Logo" ["dark:Dark theme logo", "default:Default logo", "vapor:Vaporwave logo", "alt01:Alt 01 logo", "alt02:Alt 02 logo"]
 
 ==/UserStyle== */
 @-moz-document domain("ucilnica.fri.uni-lj.si") {
@@ -58,7 +60,7 @@
     }
 
     .list-group-item-action:hover {
-        border: 1px solid var(--primaryAccentColour) !important;
+        border: 1px solid @primaryAccentColour !important;
     }
 
     .card,
@@ -112,7 +114,7 @@
         border-collapse: separate;
         background-color: #fff0;
         border-radius: 4px !important;
-        border: 1px solid var(--primaryAccentColour) !important;
+        border: 1px solid @primaryAccentColour !important;
     }
 
     .popover-region-container {
@@ -128,25 +130,25 @@
     }
 
     .fa-question-circle:before {
-        color: var(--thirdAccentColour) !important;
+        color: @thirdAccentColour !important;
     }
 
     .form-control:focus {
-        border-color: var(--primaryAccentColour) !important;
+        border-color: @primaryAccentColour !important;
         -webkit-box-shadow: 0 0 0 0.2rem #fff0 !important;
-        box-shadow: 0 0 0 0.2rem var(--primaryAccentColour) !important;
+        box-shadow: 0 0 0 0.2rem @primaryAccentColour !important;
     }
 
     .list-group-item.active {
         box-sizing: border-box;
-        border: 0px solid var(--primaryAccentColour) !important;
-        background-color: var(--primaryAccentColour) !important;
+        border: 0px solid @primaryAccentColour !important;
+        background-color: @primaryAccentColour !important;
         transition: 0.3s;
     }
 
     .list-group-item.active:hover {
         color: #fff !important;
-        background-color: var(--primaryAccentColour) !important;
+        background-color: @primaryAccentColour !important;
         opacity: 0.52;
     }
 
@@ -161,20 +163,20 @@
     /* Not-available ikons */
     .badge-info {
         background-color: #a6e22e00 !important;
-        border: 1px solid var(--thirdAccentColour) !important;
+        border: 1px solid @thirdAccentColour !important;
         border-radius: 4px;
         padding: 7px;
         transition: 0.5s;
     }
 
     .badge-info:hover {
-        background-color: var(--thirdAccentColour) !important;
-        border: 1px solid var(--thirdAccentColour) !important;
+        background-color: @thirdAccentColour !important;
+        border: 1px solid @thirdAccentColour !important;
     }
 
     /* Mihn strip na levi, ko si na predmetu / per teden */
     .course-content .current::before {
-        border-left: var(--primaryAccentColour) 2px solid !important;
+        border-left: @primaryAccentColour 2px solid !important;
     }
 
     .dashboard-card-deck.fixed-width-cards .dashboard-card {
@@ -182,7 +184,7 @@
     }
 
     dashboard-card-deck.fixed-width-cards:focus .dashboard-card:focus {
-        border-color: var(--primaryAccentColour) !important;
+        border-color: @primaryAccentColour !important;
     }
 
     .text-muted,
@@ -238,11 +240,11 @@
     }
 
     .fa-eye:before {
-        color: var(--thirdAccentColour) !important;
+        color: @thirdAccentColour !important;
     }
 
     .fa-eye-slash:before {
-        color: var(--thirdAccentColour) !important;
+        color: @thirdAccentColour !important;
     }
 
     .calendar_event_category {
@@ -264,7 +266,7 @@
     .btn-primary {
         color: #fff !important;
         background-color: #373737f5;
-        border-color: var(--thirdAccentColour);
+        border-color: @thirdAccentColour;
     }
 
     .bg-dark {
@@ -324,7 +326,7 @@
     }
 
     .fa-star:before {
-        color: var(--thirdAccentColour) !important;
+        color: @thirdAccentColour !important;
     }
 
     .input-group-text {
@@ -363,20 +365,20 @@
     }
 
     [style="padding: 5px; font-weight: bold; background-color: rgb(151, 206, 104);"] > span {
-        color: var(--thirdAccentColour) !important;
+        color: @thirdAccentColour !important;
         padding-left: 10px;
     }
 
     /* Predavanja */
     #yui_3_17_2_1_1582663948486_110 {
         background-color: rgba(255, 255, 255, 0) !important;
-        border: 1px solid var(--thirdAccentColour) !important;
+        border: 1px solid @thirdAccentColour !important;
         border-radius: 4px;
     }
 
     /* Predavanja text */
     #yui_3_17_2_1_1582663948486_110 > span {
-        color: var(--thirdAccentColour) !important;
+        color: @thirdAccentColour !important;
         padding-left: 10px;
     }
 
@@ -388,18 +390,18 @@
 
     .btn-primary:hover {
         color: #fff !important;
-        background-color: var(--primaryAccentColour) !important;
-        border-color: var(--primaryAccentColour) !important;
+        background-color: @primaryAccentColour !important;
+        border-color: @primaryAccentColour !important;
     }
 
     .btn-primary {
         color: #fff !important;
         background-color: #201f1ff5;
-        border-color: var(--primaryAccentColour);
+        border-color: @primaryAccentColour;
     }
 
     .page-item.active .page-link {
-        border-color: var(--primaryAccentColour);
+        border-color: @primaryAccentColour;
     }
 
     .userlist table#participants td {
@@ -447,27 +449,27 @@
 
     .alert-danger,
     #page-admin-index .adminerror {
-        color: var(--thirdAccentColour);
+        color: @thirdAccentColour;
         background-color: #562f2d00;
-        border: 1px solid var(--thirdAccentColour) !important;
+        border: 1px solid @thirdAccentColour !important;
     }
 
     #yui_3_17_2_1_1582666237952_20 > button {
-        color: var(--thirdAccentColour);
+        color: @thirdAccentColour;
     }
 
     .alert-info {
-        color: var(--thirdAccentColour);
+        color: @thirdAccentColour;
         background-color: #562f2d00;
-        border: 1px solid var(--thirdAccentColour) !important;
+        border: 1px solid @thirdAccentColour !important;
     }
 
     .switch input:checked + label::before {
-        background-color: var(--primaryAccentColour);
+        background-color: @primaryAccentColour;
     }
 
     .custom-radio .custom-control-input:checked ~ .custom-control-label::before {
-        background-color: var(--primaryAccentColour);
+        background-color: @primaryAccentColour;
     }
 
     .page-item disabled {
@@ -506,7 +508,7 @@
     .dropdown-item.active,
     .dropdown-item:active {
         color: #fff;
-        background-color: var(--primaryAccentColour);
+        background-color: @primaryAccentColour;
     }
 
     .popover-region-container {
@@ -565,7 +567,7 @@
     }
 
     .form-autocomplete-suggestions li:hover {
-        background-color: var(--primaryAccentColour) !important;
+        background-color: @primaryAccentColour !important;
         color: #fff;
     }
 
@@ -586,7 +588,7 @@
     }
 
     .alert.alert-info.alert-block > .close {
-        color: var(--thirdAccentColour);
+        color: @thirdAccentColour;
     }
 
     .maincalendar .calendarmonth td,
@@ -603,7 +605,7 @@
     }
 
     .btn-link {
-        color: var(--secondary) !important;
+        color: @secondaryAccentColour !important;
     }
 
     .custom-select {
@@ -615,7 +617,7 @@
     }
 
     .custom-select:focus {
-        border-color: var(--primaryAccentColour) !important;
+        border-color: @primaryAccentColour !important;
     }
 
     .course-content ul li.section.main {
@@ -634,7 +636,7 @@
     }
 
     .message.clickable[aria-checked="true"] {
-        border: 1px solid var(--primaryAccentColour) !important;
+        border: 1px solid @primaryAccentColour !important;
     }
 
     .message-app .message.received .tail {
@@ -642,11 +644,11 @@
     }
 
     .icon.fa.fa-check-circle.fa-fw {
-        color: var(--primaryAccentColour);
+        color: @primaryAccentColour;
     }
 
     .ml-auto.close {
-        color: var(--primaryAccentColour);
+        color: @primaryAccentColour;
     }
 
     .message-app .message.send .tail {
@@ -693,7 +695,7 @@
     .btn-primary:not(:disabled):not(.disabled).active,
     .show > .btn-primary.dropdown-toggle {
         color: #fff;
-        background-color: var(--primaryAccentColour);
+        background-color: @primaryAccentColour;
         border-color: #fff;
     }
 
@@ -708,7 +710,7 @@
     }
 
     .moodle-dialogue-base .closebutton::after {
-        color: var(--primaryAccentColour);
+        color: @primaryAccentColour;
     }
 
     table.quizreviewsummary th.cell {
@@ -730,9 +732,9 @@
     .uninstalldeleteconfirmexternal,
     .que .outcome,
     .que .comment {
-        color: var(--thirdAccentColour);
+        color: @thirdAccentColour;
         background-color: #fcefdc00;
-        border: 1px solid var(--thirdAccentColour) !important;
+        border: 1px solid @thirdAccentColour !important;
         border-radius: 10px;
     }
 
@@ -748,13 +750,13 @@
     }
 
     #page-mod-quiz-view table.quizattemptsummary tr.bestrow td {
-        border-color: var(--thirdAccentColour);
+        border-color: @thirdAccentColour;
         background-color: #1e1e1e;
     }
 
     .path-mod-quiz #mod_quiz_navblock .qnbutton.correct .trafficlight {
         background-image: url(/theme/image.php/boost/theme/1581676595/mod/quiz/checkmark);
-        background-color: var(--thirdAccentColour);
+        background-color: @thirdAccentColour;
         opacity: 50%;
     }
 
@@ -762,7 +764,7 @@
     .green,
     .notifysuccess,
     .connected {
-        color: var(--thirdAccentColour) !important;
+        color: @thirdAccentColour !important;
     }
 
     /* ############################## Homework/ Quiz submissions ##############################*/
@@ -770,27 +772,27 @@
     .path-mod-assign div.submissionstatussubmitted,
     .path-mod-assign a:link.submissionstatussubmitted {
         color: #fff;
-        border: 2px solid var(--thirdAccentColour);
+        border: 2px solid @thirdAccentColour;
         background-color: #fff0;
     }
 
     .path-mod-assign td.submissiongraded,
     .path-mod-assign div.submissiongraded {
         color: #fff;
-        border: 2px solid var(--thirdAccentColour);
+        border: 2px solid @thirdAccentColour;
         background-color: #fff0;
     }
 
     .path-mod-assign td.earlysubmission,
     .path-mod-assign div.earlysubmission {
         color: #fff;
-        border: 2px solid var(--thirdAccentColour);
+        border: 2px solid @thirdAccentColour;
         background-color: #fff0;
     }
 
     /* ############################## Forums ##############################*/
     .fa-star:before {
-        color: var(--thirdAccentColour) !important;
+        color: @thirdAccentColour !important;
     }
 
     .region_main_settings_menu_proxy {
@@ -798,11 +800,11 @@
     }
 
     .fa-question-circle:before {
-        color: var(--thirdAccentColour) !important;
+        color: @thirdAccentColour !important;
     }
 
     .fa-long-arrow-down:before {
-        color: var(--thirdAccentColour) !important;
+        color: @thirdAccentColour !important;
     }
 
     /* Unsubmitted homework  */
@@ -814,7 +816,7 @@
 
     .message-app .contact-status.online {
         border: 1px solid #fff;
-        background-color: var(--thirdAccentColour);
+        background-color: @thirdAccentColour;
     }
 
     .block .block-cards .course-summaryitem {
@@ -881,7 +883,7 @@
     .nav-pills .nav-link.active,
     .nav-pills .show > .nav-link {
         color: #fff;
-        background-color: var(--primaryAccentColour);
+        background-color: @primaryAccentColour;
     }
 
     .fa-check:before {
@@ -933,7 +935,7 @@
     }
 
     .fa-long-arrow-up:before {
-        color: var(--thirdAccentColour);
+        color: @thirdAccentColour;
     }
 
     .path-mod-workshop .userplan dd {
@@ -942,19 +944,19 @@
     }
 
     .path-mod-workshop .userplan dd.active {
-        border: 1px solid var(--thirdAccentColour);
+        border: 1px solid @thirdAccentColour;
         border-bottom: 0px;
         background-color: #353535;
     }
 
     .path-mod-workshop .userplan dt.active {
-        background: var(--thirdAccentColour);
+        background: @thirdAccentColour;
     }
 
     pre {
         background: #48484800 !important;
         color: #ffffff;
-        border: 1px solid var(--thirdAccentColour);
+        border: 1px solid @thirdAccentColour;
         padding: 15px;
         margin: 10px;
     }
@@ -963,7 +965,7 @@
         background-color: #000000c4 !important;
     }
 
-    input[type="radio" i][value="1"]::before {
+    input[type="radio"][value="1"]::before {
 
         content: "";
         height: 13px;
@@ -977,7 +979,7 @@
         z-index: 0;
     }
 
-    input[type="checkbox" i][checked="checked"]::after {
+    input[type="checkbox"][checked="checked"]::after {
 
         content: "";
         height: 13px;
@@ -999,7 +1001,7 @@
     /* Standard selectorji */
     a {
         transition: 0.05s;
-        color: var(--secondaryAccentColour) !important;
+        color: @secondaryAccentColour !important;
     }
 
     a:hover {
@@ -1017,116 +1019,188 @@
 }
 
 @-moz-document domain("ucilnica.fri.uni-lj.si") {
-    /* Section za overridanje ikonc in slikc na strani. Sourci se znajo spremeneti glede na housting solution-e. */
-    /* ############################## Icons ##############################*/
-    /* Forumi */
-    [src*='/forum/'] {
-        content: url(https://raw.githubusercontent.com/janvasiljevic/fri-dark-theme/testing/icons64px/speech-bubble-164px.png);
+
+
+    /*
+      _____ _____ ____  _   _  _____ 
+     |_   _/ ____/ __ \| \ | |/ ____|
+       | || |   | |  | |  \| | (___  
+       | || |   | |  | | . ` |\___ \ 
+      _| || |___| |__| | |\  |____) |
+     |_____\_____\____/|_| \_|_____/ 
+                                 
+    */
+    & when (@icons =mono) {
+
+        /* Forumi */
+        [src*='/forum/'] {
+            content: url(https://raw.githubusercontent.com/janvasiljevic/fri-dark-theme/testing/icons64px/speech-bubble-164px.png);
+        }
+
+        /* Vprasaj */
+        [src*='/boost/choice/'] {
+            content: url(https://raw.githubusercontent.com/janvasiljevic/fri-dark-theme/master/icons64px/vprasaj%20-%2064%20px.png);
+        }
+
+        /* Kvizi / domace naloge z multiple choici */
+        [src*="/quiz/"] {
+            content: url(https://raw.githubusercontent.com/janvasiljevic/fri-dark-theme/testing/icons64px/bookmark64px.png);
+        }
+
+        /* PDF - ji */
+        [src*="/pdf-24"] {
+            content: url(https://raw.githubusercontent.com/janvasiljevic/fri-dark-theme/testing/icons64px/save64px.png);
+        }
+
+        /* Internal linki - npr.: obveznosti studenta, osnovni podatki o predmetu etc. */
+        [src*="page"] {
+            content: url(https://raw.githubusercontent.com/janvasiljevic/fri-dark-theme/testing/icons64px/book64px.png);
+        }
+
+        /* Dokumenti ala doxc, trenutno samo download icon */
+        [src*="document-24"] {
+            content: url(https://raw.githubusercontent.com/janvasiljevic/fri-dark-theme/master/icons64px/download-2%20-%2064%20px.png);
+        }
+
+        /* JPG */
+        [src*="/f/jpeg-24"] {
+            content: url(https://raw.githubusercontent.com/janvasiljevic/fri-dark-theme/master/icons64px/picture%20-%2064%20px.png);
+        }
+
+        /* PNG */
+        [src*="/f/png-24"] {
+            content: url(https://raw.githubusercontent.com/janvasiljevic/fri-dark-theme/master/icons64px/picture%20-%2064%20px.png);
+        }
+
+        /* TIFF */
+        [src*="/f/tiff-24"] {
+            content: url(https://raw.githubusercontent.com/janvasiljevic/fri-dark-theme/master/icons64px/picture%20-%2064%20px.png);
+        }
+
+        /* Unknown, po navadi je nek source code */
+        [src*="/unknown-24"] {
+            content: url(https://raw.githubusercontent.com/janvasiljevic/fri-dark-theme/master/icons64px/source%20code%20-%2064%20px.png);
+        }
+
+
+        /* External linki - po navadi pri fiziki */
+        [src*="/boost/url/"] {
+            content: url(https://raw.githubusercontent.com/janvasiljevic/fri-dark-theme/testing/icons64px/right-arrow64px.png);
+        }
+
+        /* Po navadi neki za izbiranje stvari, npr. pri OIS */
+        [src*="choicegroup"] {
+            content: url(https://raw.githubusercontent.com/janvasiljevic/fri-dark-theme/testing/icons64px/stick-man64px.png);
+        }
+
+        /* Anketa, po navadi "Anketa o X predmetu" */
+        [src*="questionnaire"] {
+            content: url(https://raw.githubusercontent.com/janvasiljevic/fri-dark-theme/testing/icons64px/anketa64px.png);
+        }
+
+        /* Oddaja domacih nalog ali pa pritozbe na ocene */
+        [src*="/boost/assign/"] {
+            content: url(https://raw.githubusercontent.com/janvasiljevic/fri-dark-theme/testing/icons64px/oddaja64px.png);
+        }
+
+        /* Excel */
+        [src*="f/spreadsheet-24"] {
+            content: url(https://raw.githubusercontent.com/janvasiljevic/fri-dark-theme/testing/icons64px/excel64px.png);
+        }
+
+        /* Default picture profile */
+        [src*="/u/f2"] {
+            content: url(https://raw.githubusercontent.com/janvasiljevic/fri-dark-theme/master/icons64px/default-user%20-%2064%20px.png);
+            height: 35px !important;
+            width: 35px !important;
+            padding: 3px;
+        }
+
+        /* BBB button - Sad korona noises */
+        [src*="bigbluebuttonbn/"] {
+            content: url(https://raw.githubusercontent.com/janvasiljevic/fri-dark-theme/master/icons64px/bbb%20-%2064%20px.png);
+        }
+
+        /* Folder icons, npr.: pri LA */
+        [src*="folder/"] {
+            content: url(https://raw.githubusercontent.com/janvasiljevic/fri-dark-theme/master/icons64px/folder%20-%2064%20px.png);
+        }
+
+        /* Source code */
+        [src*="/f/sourcecode-24"] {
+            content: url(https://raw.githubusercontent.com/janvasiljevic/fri-dark-theme/master/icons64px/source%20code%20-%2064%20px.png);
+        }
+
+        /* Slovar, npr.: slo - angl slovar pri ODV */
+        [src*="glossary"] {
+            content: url(https://raw.githubusercontent.com/janvasiljevic/fri-dark-theme/testing/icons64px/letter64px.png);
+            height: 24px !important;
+            width: 24px !important;
+        }
+
+        /* DN Za oddaje ois */
+        [src*="workshop/"] {
+            content: url(https://raw.githubusercontent.com/janvasiljevic/fri-dark-theme/master/icons64px/transfer-1-64px.png);
+            height: 24px !important;
+            width: 24px !important;
+        }
+
+        /* ZIP datoteke po navadi ali pa arhivi izpitov, kolokvijev etc. */
+        [src*="archive-24"] {
+            content: url(https://raw.githubusercontent.com/janvasiljevic/fri-dark-theme/testing/icons64px/pie-chart-264px.png);
+            height: 24px !important;
+            width: 24px !important;
+        }
+
+        /* Ponavadi za resitve starih izpitov, naprimer pri RK (again) */
+        [src="/boost/wiki"] {
+            content: url(https://raw.githubusercontent.com/janvasiljevic/fri-dark-theme/testing/icons64px/list64px.png);
+            height: 24px !important;
+            width: 24px !important;
+        }
+
+        /* Download arrow na my files sectionu */
+        .dndupload-arrow {
+            background: url(https://raw.githubusercontent.com/janvasiljevic/fri-dark-theme/testing/icons/download.png) center no-repeat;
+            background-size: auto 60px;
+        }
     }
 
-    /* Kvizi / domace naloge z multiple choici */
-    [src*="/quiz/"] {
-        content: url(https://raw.githubusercontent.com/janvasiljevic/fri-dark-theme/testing/icons64px/bookmark64px.png);
+
+
+    /* FRI logo - inverted colours */
+    [src*="/ucilnica-logo-01.png"] & when (@logo =dark) {
+        content: url(https://raw.githubusercontent.com/janvasiljevic/fri-dark-theme/testing/icons/fri-logo-inverted.png);
+        opacity: 0.5;
     }
 
-    /* PDF - ji */
-    [src*="/pdf-24"] {
-        content: url(https://raw.githubusercontent.com/janvasiljevic/fri-dark-theme/testing/icons64px/save64px.png);
+    [src*="/ucilnica-logo-01.png"] & when (@logo =vapor) {
+        content: url(https://raw.githubusercontent.com/janvasiljevic/fri-dark-theme/master/otherIcons/logo-vaporwave-style.png);
+        opacity: 1.0 !important;
+        filter: grayscale(0%) !important;
+        padding-right: 5px;
     }
 
-    /* Internal linki - npr.: obveznosti studenta, osnovni podatki o predmetu etc. */
-    [src*="page"] {
-        content: url(https://raw.githubusercontent.com/janvasiljevic/fri-dark-theme/testing/icons64px/book64px.png);
+    [src*="/ucilnica-logo-01.png"] & when (@logo =alt01) {
+        content: url(https://raw.githubusercontent.com/janvasiljevic/fri-dark-theme/master/otherIcons/logo-alt-01.png);
+        opacity: 1.0 !important;
+        filter: grayscale(0%) !important;
     }
 
-    /* WORDI PA TAKE ZADEVE; MYBE DOBRO NE ISTA IKONCA KOT PDFJI? */
-    [src*="document-24"] {
-        content: url(https://raw.githubusercontent.com/janvasiljevic/fri-dark-theme/master/icons/save.png);
-    }
-
-    /* External linki - po navadi pri fiziki */
-    [src*="/boost/url/"] {
-        content: url(https://raw.githubusercontent.com/janvasiljevic/fri-dark-theme/testing/icons64px/right-arrow64px.png);
-    }
-
-    /* Po navadi neki za izbiranje stvari, npr. pri OIS */
-    [src*="choicegroup"] {
-        content: url(https://raw.githubusercontent.com/janvasiljevic/fri-dark-theme/testing/icons64px/stick-man64px.png);
-    }
-
-    /* Anketa, po navadi "Anketa o X predmetu" */
-    [src*="questionnaire"] {
-        content: url(https://raw.githubusercontent.com/janvasiljevic/fri-dark-theme/testing/icons64px/anketa64px.png);
-    }
-
-    /* Oddaja domacih nalog ali pa pritozbe na ocene */
-    [src*="/boost/assign/"] {
-        content: url(https://raw.githubusercontent.com/janvasiljevic/fri-dark-theme/testing/icons64px/oddaja64px.png);
-    }
-
-    /* Excel */
-    [src*="f/spreadsheet-24"] {
-        content: url(https://raw.githubusercontent.com/janvasiljevic/fri-dark-theme/testing/icons64px/excel64px.png);
+    [src*="/ucilnica-logo-01.png"] & when (@logo =alt02) {
+        content: url(https://raw.githubusercontent.com/janvasiljevic/fri-dark-theme/master/otherIcons/logo-alt-02.png);
+        opacity: 1.0 !important;
+        filter: grayscale(0%) !important;
     }
 
 
 
-    /* ########################################################################################################################################################################################*/
-    /********** SEEEEEEEEEEEEEE ZA DODAT */
-    /* Default picture profile */
-    [src*="/u/f2"] {
-        content: url(https://raw.githubusercontent.com/janvasiljevic/fri-dark-theme/master/icons64px/default-user%20-%2064%20px.png);
-        height: 35px !important;
-        width: 35px !important;
-        padding: 3px;
-    }
-
-    /* BBB button - Sad korona noises */
-    [src*="bigbluebuttonbn/"] {
-        content: url(https://raw.githubusercontent.com/janvasiljevic/fri-dark-theme/master/icons64px/bbb%20-%2064%20px.png);
-    }
-
-    /* Folder icons, npr.: pri LA */
-    [src*="folder/"] {
-        content: url(https://raw.githubusercontent.com/janvasiljevic/fri-dark-theme/master/icons64px/folder%20-%2064%20px.png);
-    }
-
-    /* Source code */
-    [src*="/f/sourcecode-24"] {
-        content: url(https://raw.githubusercontent.com/janvasiljevic/fri-dark-theme/master/icons64px/source%20code%20-%2064%20px.png);
-    }
-
-
-    /* ########################################################################################################################################################################################*/
-    /* Slovar, npr.: slo - angl slovar pri ODV */
-    [src*="glossary"] {
-        content: url(https://raw.githubusercontent.com/janvasiljevic/fri-dark-theme/testing/icons64px/letter64px.png);
-        height: 24px !important;
-        width: 24px !important;
-    }
-
-    /* DN Za oddaje ois */
-    [src*="workshop/"] {
-        content: url(https://raw.githubusercontent.com/janvasiljevic/fri-dark-theme/master/icons64px/transfer-1-64px.png);
-        height: 24px !important;
-        width: 24px !important;
-    }
-
-    /* ZIP datoteke po navadi ali pa arhivi izpitov, kolokvijev etc. */
-    [src*="archive-24"] {
-        content: url(https://raw.githubusercontent.com/janvasiljevic/fri-dark-theme/testing/icons64px/pie-chart-264px.png);
-        height: 24px !important;
-        width: 24px !important;
-    }
-
-    /* Ponavadi za resitve starih izpitov, naprimer pri RK (again) */
-    [src="/boost/wiki"] {
-        content: url(https://raw.githubusercontent.com/janvasiljevic/fri-dark-theme/testing/icons64px/list64px.png);
-        height: 24px !important;
-        width: 24px !important;
-    }
-
-    /* ############################## Ostalo ##############################*/
+    /*  
+       _   _   _   _   _     _   _   _   _   _     _   _   _   _   _   _   _     _   _   _   _   _  
+      / \ / \ / \ / \ / \   / \ / \ / \ / \ / \   / \ / \ / \ / \ / \ / \ / \   / \ / \ / \ / \ / \ 
+     ( O | t | h | e | r ) ( i | m | a | g | e ) ( r | e | l | a | t | e | d ) ( s | t | u | f | f )
+      \_/ \_/ \_/ \_/ \_/   \_/ \_/ \_/ \_/ \_/   \_/ \_/ \_/ \_/ \_/ \_/ \_/   \_/ \_/ \_/ \_/ \_/ 
+    */
     /* Background image */
     body {
         color: #ffffffd9 !important;
@@ -1134,17 +1208,6 @@
         --bg-img: url('https://camo.githubusercontent.com/5b8e4cd1a5ce69b6affa17ebd8e4aee00c147618/68747470733a2f2f7374796c6973687468656d65732e6769746875622e696f2f4769744875622d4461726b2f696d616765732f6261636b67726f756e64732f62672d63726f737368617463682e706e67');
     }
 
-    /* FRI logo - inverted colours */
-    [src*="/ucilnica-logo-01.png"] {
-        content: url(https://raw.githubusercontent.com/janvasiljevic/fri-dark-theme/testing/icons/fri-logo-inverted.png);
-        opacity: 0.5;
-    }
-
-    /* Download arrow na my files sectionu */
-    .dndupload-arrow {
-        background: url(https://raw.githubusercontent.com/janvasiljevic/fri-dark-theme/testing/icons/download.png) center no-repeat;
-        background-size: auto 60px;
-    }
 
     /* Zatemnitev ikonce za nicelne prihajajoce aktivnosti */
     [src="https://ucilnica.fri.uni-lj.si/theme/image.php/boost/block_timeline/1581676600/activities"] {
@@ -1158,7 +1221,7 @@
     /* ############################## Specificno RK ##############################*/
     [style="padding: 5px; font-weight: bold; background-color: rgb(51, 102, 255);"] {
         background-color: rgba(255, 255, 255, 0) !important;
-        border: 1px solid var(--primaryAccentColour) !important;
+        border: 1px solid @primaryAccentColour !important;
         border-radius: 4px;
     }
 
@@ -1178,18 +1241,18 @@
     /* Domace n, kvizi, vaje, izpiti*/
     [style="padding: 5px; font-weight: bold; background-color: rgb(151, 206, 104);"] {
         background-color: rgba(255, 255, 255, 0) !important;
-        border: 1px solid var(--thirdAccentColour) !important;
+        border: 1px solid @thirdAccentColour !important;
         border-radius: 4px;
     }
 
     [style="padding: 5px; font-weight: bold; background-color: rgb(51, 102, 255);"] > span {
-        color: var(--primaryAccentColour) !important;
+        color: @primaryAccentColour !important;
         padding-left: 10px;
     }
 
     /* ############################## Specificly physics ##############################*/
     [style="color: rgb(152, 202, 62);"] {
-        color: var(--thirdAccentColour) !important;
+        color: @thirdAccentColour !important;
     }
 
     /* ############################## Specificly ODV ##############################*/
@@ -1226,7 +1289,7 @@
 
     a > .instancename {
         padding-left: 4px;
-        color: var(--secondaryAccentColour) !important;
+        color: @secondaryAccentColour !important;
     }
 
     a > .instancename:hover {
