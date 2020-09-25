@@ -1175,7 +1175,7 @@
     }
 
     [src*="/ucilnica-logo-01.png"] & when (@logo =vapor) {
-        content: url(https://raw.githubusercontent.com/janvasiljevic/fri-dark-theme/master/otherIcons/logo-vaporwave-style.png);
+        content: url(https://raw.githubusercontent.com/janvasiljevic/fri-dark-theme/master/otherIcons/logo-vaporwave-style-new.png);
         opacity: 1.0 !important;
         filter: grayscale(0%) !important;
         padding-right: 5px;
