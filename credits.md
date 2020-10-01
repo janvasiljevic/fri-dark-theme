@@ -1,3 +1,5 @@
+Forked from [FRI dark theme](https://github.com/janvasiljevic/fri-dark-theme) by [Jan Vasiljevič](https://github.com/janvasiljevic).
+
 Icon replacments were created by [Gregor Cresnar](https://www.flaticon.com/packs/interface-icon-assets)
 
 ### Background patterns:

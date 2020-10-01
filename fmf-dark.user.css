@@ -1,12 +1,12 @@
 /* ==UserStyle==
-@name         fri-dark
-@author       Jan Vasiljevic (https://github.com/janvasiljevic)
-@namespace    https://github.com/janvasiljevic/fri-dark-theme
+@name         fmf-dark
+@author       Blaž Rojc (https://github.com/hackguy25)
+@namespace    https://github.com/hackguy25/fmf-dark-theme
 @version      2021.1.7
-@homepageURL  https://github.com/janvasiljevic/fri-dark-theme
-@supportURL   https://github.com/janvasiljevic/fri-dark-theme/issues
-@updateURL    https://raw.githubusercontent.com/janvasiljevic/fri-dark-theme/master/fri-dark.user.css
-@description  A dark theme of the FRI online moodle classrom for those long nights.
+@homepageURL  https://github.com/hackguy25/fmf-dark-theme
+@supportURL   https://github.com/hackguy25/fmf-dark-theme/issues
+@updateURL    https://raw.githubusercontent.com/hackguy25/fmf-dark-theme/master/fmf-dark.user.css
+@description  A dark theme of the FMF online moodle classrom for those long nights.
 @license      unlicense
 
 @preprocessor less
@@ -16,11 +16,10 @@
 @var select   icons "Icons" ["mono:Mono white icons", "default:Default Icons"]
 @var select   logo "Logo" ["dark:Dark theme logo", "default:Default logo", "vapor:Vaporwave logo", "alt01:Alt 01 logo", "alt02:Alt 02 logo"]
 @var select   background "Background patterns" ["default:Default", "binding_dark:Binding dark", "curls:Curls", "natural_black:Natural black", "webb_dark:Webb dark", "wheat:Wheat", "serious:Y so serious"]
-@var checkbox urnik "Urnik" 1
 @var range grayscale "Image grayscale" [50, 0, 100, 1, '%']
 
 ==/UserStyle== */
-@-moz-document domain("ucilnica.fri.uni-lj.si") {
+@-moz-document domain("ucilnica.fmf.uni-lj.si") {
     .dropdown-item.active,
     .dropdown-item:active {
         color: #fff !important;
@@ -32,14 +31,14 @@
     }
 
     #searchform_button {
-        
+
         margin-left: 10px;
     }
-    
+
     #searchform_button[title="globalsearch"] {
         margin-top: 10px;
     }
-    
+
     /* Background area pri levi strani */
     [data-region="drawer"] {
         background-color: #2b2b2b66 !important;
@@ -293,7 +292,7 @@
     img {
         filter: grayscale(@grayscale) brightness(95%);
     }
-    
+
     .dashboard-card-img {
         filter: grayscale(@grayscale) brightness(80%);
     }
@@ -1155,46 +1154,46 @@
     .dashboard-card:hover {
         border: 1px solid #ffffffc2 !important;
     }
-    
-    
+
+
     /* WORKSHOP FORMATTING */
-    
+
     .author, .userdate{
         color: #ffffff9c !important;
     }
-    
+
     .submissiongrade{
         background-color: transparent !important;
         color: @primaryAccentColour !important;
         border: 2px solid @primaryAccentColour !important;
     }
-    
+
     .assessmentgrade{
         background-color: transparent !important;
         color: @secondaryAccentColour !important;
         border: 2px solid @secondaryAccentColour !important;
     }
-    
+
     .tasks > .completed, .tasks > .info{
         color: white !important;
     }
-    
+
     .phasetitle {
         color: #fffffff2 !important;
     }
-    
+
      .active .phasetitle{
         color: #000000f2 !important;
     }
-    
+
     .phasetasks{
         background-color: #00000070 !important;
     }
-    
+
     .phase > .active.phasetasks{
         background-color: #000000bf !important;
     }
-    
+
     .userplan{
         border-radius: 5px;
     }
@@ -1203,13 +1202,13 @@
 
 
     /*
-      _____ _____ ____  _   _  _____ 
+      _____ _____ ____  _   _  _____
      |_   _/ ____/ __ \| \ | |/ ____|
-       | || |   | |  | |  \| | (___  
-       | || |   | |  | | . ` |\___ \ 
+       | || |   | |  | |  \| | (___
+       | || |   | |  | | . ` |\___ \
       _| || |___| |__| | |\  |____) |
-     |_____\_____\____/|_| \_|_____/ 
-                                 
+     |_____\_____\____/|_| \_|_____/
+
     */
     & when (@icons =mono) {
 
@@ -1387,11 +1386,11 @@
 
 
 
-    /*  
-       _   _   _   _   _     _   _   _   _   _     _   _   _   _   _   _   _     _   _   _   _   _  
-      / \ / \ / \ / \ / \   / \ / \ / \ / \ / \   / \ / \ / \ / \ / \ / \ / \   / \ / \ / \ / \ / \ 
+    /*
+       _   _   _   _   _     _   _   _   _   _     _   _   _   _   _   _   _     _   _   _   _   _
+      / \ / \ / \ / \ / \   / \ / \ / \ / \ / \   / \ / \ / \ / \ / \ / \ / \   / \ / \ / \ / \ / \
      ( O | t | h | e | r ) ( i | m | a | g | e ) ( r | e | l | a | t | e | d ) ( s | t | u | f | f )
-      \_/ \_/ \_/ \_/ \_/   \_/ \_/ \_/ \_/ \_/   \_/ \_/ \_/ \_/ \_/ \_/ \_/   \_/ \_/ \_/ \_/ \_/ 
+      \_/ \_/ \_/ \_/ \_/   \_/ \_/ \_/ \_/ \_/   \_/ \_/ \_/ \_/ \_/ \_/ \_/   \_/ \_/ \_/ \_/ \_/
     */
     /* Background image */
     body {
