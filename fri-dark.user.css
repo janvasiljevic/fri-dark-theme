@@ -2,7 +2,7 @@
 @name         fri-dark
 @author       Jan Vasiljevic (https://github.com/janvasiljevic)
 @namespace    https://github.com/janvasiljevic/fri-dark-theme
-@version      2021.1.6
+@version      2021.1.7
 @homepageURL  https://github.com/janvasiljevic/fri-dark-theme
 @supportURL   https://github.com/janvasiljevic/fri-dark-theme/issues
 @updateURL    https://raw.githubusercontent.com/janvasiljevic/fri-dark-theme/master/fri-dark.user.css
@@ -17,6 +17,7 @@
 @var select   logo "Logo" ["dark:Dark theme logo", "default:Default logo", "vapor:Vaporwave logo", "alt01:Alt 01 logo", "alt02:Alt 02 logo"]
 @var select   background "Background patterns" ["default:Default", "binding_dark:Binding dark", "curls:Curls", "natural_black:Natural black", "webb_dark:Webb dark", "wheat:Wheat", "serious:Y so serious"]
 @var checkbox urnik "Urnik" 1
+@var range grayscale "Image grayscale" [50, 0, 100, 1, '%']
 
 ==/UserStyle== */
 @-moz-document domain("ucilnica.fri.uni-lj.si") {
@@ -290,7 +291,11 @@
     }
 
     img {
-        filter: grayscale(50%);
+        filter: grayscale(@grayscale) brightness(95%);
+    }
+    
+    .dashboard-card-img {
+        filter: grayscale(@grayscale) brightness(80%);
     }
 
     .btn-primary {
