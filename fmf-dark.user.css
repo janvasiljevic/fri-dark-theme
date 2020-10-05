@@ -16,7 +16,7 @@
 ==/UserStyle== */
 
 @-moz-document domain("ucilnica.fmf.uni-lj.si") {
-
+    
     :root {
         --text-color: rgba(255, 255, 255, @textIntensity);
         --muted-text-color: rgba(255, 255, 255, @textIntensity*0.6);
@@ -24,21 +24,22 @@
         --content-bg-color: #2d2d2d;
         --bttn-color: #3c3c3c;
         --accent-transparent: ~"@{accentColor}33";
+        --a-bit-darker: #00000022;
     }
-
+    
     /* ---- Navbar ---- */
     .navbar {
         background-color: var(--site-bg-color);
     }
-
+    
     .site-name {
         color: @accentColor;
     }
-
+    
     .navbar-light .navbar-nav .nav-link {
         color: rgba(255, 255, 255, 0.5);
     }
-
+    
     .dropdown-menu {
         background-color: var(--site-bg-color);
     }
@@ -47,101 +48,101 @@
     .dropdown-item:focus {
         background-color: #0000005c;
     }
-
+    
     .dropdown-item.active,
     .dropdown-item:active {
         color: var(--text-color) !important;
     }
-
+    
     .icon {
         color: var(--text-color) !important;
     }
-
+    
     .dropdown-divider {
         border-color: var(--text-color);
     }
-
+    
     /* ---- Body ---- */
     .d-print-block {
         color: var(--site-bg-color);
         background-color: var(--site-bg-color);
     }
-
+    
     .card {
         background-color: var(--content-bg-color);
         box-shadow: 0px 0px #fff0 !important;
-        border: 2px solid var(--site-bg-color)
+        border: 3px solid var(--site-bg-color)
     }
-
+    
     #region-main {
         background-color: var(--content-bg-color);
     }
-
+    
     div {
         color: var(--text-color) !important;
     }
-
+    
     .alert-danger {
         background-color: #ff000044;
     }
-
+    
     #search,
     #shortsearchbox {
         color: var(--text-color) !important;
         background-color: var(--site-bg-color) !important;
     }
-
+    
     #page-footer {
         background-color: var(--content-bg-color)  !important;
-        border-top: 2px solid var(--site-bg-color) !important;
+        border-top: 3px solid var(--site-bg-color) !important;
     }
-
+    
     .popover-body {
         background-color: var(--bttn-color)  !important;
         border: none;
     }
-
+    
     .popover-header {
         background-color: var(--bttn-color)  !important;
         border: none;
     }
-
+    
     .main {
         border-color : var(--text-color) !important;
     }
-
+    
     /* ---- Notifications ---- */
     .popover-region-container {
         background-color: var(--content-bg-color);
-        border: 2px solid var(--site-bg-color);
+        border: 3px solid var(--site-bg-color);
         border-radius: 4px;
     }
-
+    
     .popover-region-toggle::before {
         border-bottom: 11px solid var(--site-bg-color) !important;
     }
-
+    
     .popover-region-toggle::after {
         border-bottom: 9px solid var(--content-bg-color) !important;
     }
-
+    
     .popover-region-header-container {
         border-bottom: 2px solid var(--site-bg-color);
     }
-
+    
     .popover-region-footer-container {
         background-color: var(--content-bg-color);
         border-top: 2px solid var(--site-bg-color);
     }
-
-
+    
+    
     /* ---- Forums ---- */
     table, tr, tbody, td,
     th {
         color: var(--text-color) !important;
         border-color : var(--text-color) !important;
     }
-
+    
     .btn,
     .btn-primary,
     .btn-secondary {
@@ -149,7 +150,7 @@
         background-color: var(--bttn-color);
         border-color: @accentColor;
     }
-
+    
     .btn:hover,
     .btn-primary:hover,
     .btn-secondary:hover {
@@ -157,7 +158,12 @@
         background-color: var(--bttn-color);
         border-color: var(--text-color);
     }
-
+    
+    .btn-link {
+        background-color: none;
+        border: none;
+    }
+    
     .custom-select {
         border-radius: 3px;
         margin-left: 10px !important;
@@ -165,44 +171,108 @@
         border: 1px solid #ced4daab;
         color: var(--text-color);
     }
-
+    
     .border {
-        border: 1px solid var(--text-color);
+        border: 1px solid var(--text-color) !important;
         border-radius: 4px;
     }
-
+    
     .border-bottom {
         border-color: var(--text-color) !important;
     }
-
+    
+    .bg-light {
+        background-color: var(--content-bg-color) !important;
+    }
+    
+    .bg-white {
+        background-color: var(--content-bg-color) !important;
+    }
+    
+    .my-2 {
+        border: 3px solid var(--site-bg-color) !important;
+        border-radius: 4px;
+    }
+    
+    .p-2 {
+        padding: .7rem!important;
+    }
+    
+    .page-item.active .page-link {
+        border-color: @accentColor;
+        background-color: @accentColor;
+    }
+    
     /* ---- Dashboard ---- */
     .page-link {
         background-color: var(--bttn-color);
         border-color : var(--text-color);
     }
-
+    
     .page-item.disabled .page-link {
         color: var(--content-bg-color);
         background-color: var(--content-bg-color);
         border-color : var(--content-bg-color);
     }
-
+    
     .list-group-item {
         background-color: var(--content-bg-color);
     }
-
+    
     .calendar_event_course {
         background-color: var(--accent-transparent) !important;
     }
-
+    
     .text-muted {
         color: var(--muted-text-color) !important;
     }
+    
+    /* ---- Settings ---- */
+    .preferences-container .preference-table tr th:nth-child(even),
+    .preferences-container .preference-table tr td:nth-child(even) {
+        background-color: var(--a-bit-darker);
+    }
+    
+    .preferences-container .preference-table .preference-row .preference-state .preference-state-status-container {
+        width: 80px;
+    }
+    
+    .preferences-container .preference-table tr td:not(:first-child) {
+        width: 280px;
+        text-align: center;
+    }
+    
+    #qrcode {
+        width: 185px;
+        background-color: white;
+    }
+    
+    .preferences-container .preference-table thead th {
+        min-width: 280px;
+    }
+    
+    /* ---- Scrollbars ---- */
+    ::-webkit-scrollbar {
+        width: 16px
+    }
+    
+    ::-webkit-scrollbar-track {
+        background: var(--site-bg-color);
+    }
 
+    ::-webkit-scrollbar-thumb {
+        background: var(--bttn-color);
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        background: var(--accent-transparent);
+    }
+    
     /* ---- Standard selectors ---- */
     a {
         transition: 0.05s;
         color: @accentColor !important;
+        background-color: transparent !important;
         box-shadow: none;
     }
 
@@ -229,14 +299,14 @@
         background-color: transparent !important;
         text-decoration: none !important;
     }
-
+    
     *:focus-within {
         background-color: none !important;
         outline: 0 !important;
         -webkit-box-shadow: none !important;
         box-shadow: 0 !important;
     }
-
+    
 }
 
 /* ---- Login page ---- */
