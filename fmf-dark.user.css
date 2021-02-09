@@ -138,7 +138,7 @@
     
     /* ---- Forums ---- */
     table, tr, tbody, td,
-    th {
+    th, .generaltable, .generaltable tbody tr:hover {
         color: var(--text-color) !important;
         border-color : var(--text-color) !important;
     }
@@ -357,5 +357,5 @@
 .path-mod-assign td.latesubmission,
 .path-mod-assign a:link.latesubmission,
 .path-mod-assign div.latesubmission {
-	background-color: #932121; /* dark red */
+    background-color: #932121; /* dark red */
 }
