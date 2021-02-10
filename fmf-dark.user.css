@@ -349,7 +349,7 @@
 /* status naloge: neocenjeno */
 .path-mod-assign td.submissionnotgraded,
 .path-mod-assign div.submissionnotgraded {
-    background-color: intial !important; /* colourless */
+    background-color: initial !important; /* colourless */
 }
 
 /* status naloge: oddano v ocenjevanje */
