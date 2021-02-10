@@ -219,7 +219,16 @@
         background-color: var(--content-bg-color);
     }
     
-    .calendar_event_course {
+    .modal-content {
+        background-color: var(--site-bg-color) !important;
+    }
+    
+    .calendar_event_site,
+    .calendar_event_category,
+    .calendar_event_course,
+    .calendar_event_group,
+    .calendar_event_user,
+    .calendar_event_other {
         background-color: var(--accent-transparent) !important;
     }
     
@@ -362,3 +371,4 @@
 .path-mod-assign div.latesubmission {
     background-color: #932121 !important; /* dark red */
 }
+
