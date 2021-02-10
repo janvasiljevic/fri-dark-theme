@@ -340,7 +340,7 @@
 /* status naloge: neocenjeno */
 .path-mod-assign td.submissionnotgraded,
 .path-mod-assign div.submissionnotgraded {
-    background-color: intial; /* colourless */
+    background-color: intial !important; /* colourless */
 }
 
 /* status naloge: oddano v ocenjevanje */
@@ -353,12 +353,12 @@
 /* status naloge: ocenjeno */
 .path-mod-assign td.submissiongraded,
 .path-mod-assign div.submissiongraded {
-    background-color: #277d39; /* dark green */
+    background-color: #277d39 !important; /* dark green */
 }
 
 /* preostali cas: oddano prepozno */
 .path-mod-assign td.latesubmission,
 .path-mod-assign a:link.latesubmission,
 .path-mod-assign div.latesubmission {
-    background-color: #932121; /* dark red */
+    background-color: #932121 !important; /* dark red */
 }
