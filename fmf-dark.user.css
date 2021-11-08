@@ -260,6 +260,36 @@
         min-width: 280px;
     }
     
+    /* ---- Quiz ---- */
+    .que .info{
+        background-color: #f8f9fa20;
+    }
+    
+    .que .formulation {
+        background-color: #e7f3f530;
+    }
+    
+    .que.multianswer .feedbackspan,
+    .path-mod-quiz .gradingdetails {
+        color: var(--content-bg-color)!important;
+    }
+    
+    table.quizreviewsummary td.cell {
+        background-color: #f0f0f020;
+    }
+    
+     table.quizreviewsummary th.cell {
+        background-color: #f0f0f050;
+    }
+    
+    #page-mod-quiz-view table.quizattemptsummary tr.bestrow td {
+        background-color: #d9edf750;
+    }
+    
+    .que .validationerror {
+        color: #ca3120!important;
+    }
+    
     /* ---- Scrollbars ---- */
     ::-webkit-scrollbar {
         width: 16px
